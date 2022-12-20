@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    @include('./components/base/_meta.html')
+    @include('./components/base/_links.html')
+  </head>
+
+  <body>
+    @include('./components/_popups.html')
+
+    <div class="site-wrapper">
+      @include('./components/_header.html')
+
+      <main class="main">
+        @include('./components/_products-slider-new.html')
+        @include('./components/_categories.html')
+        @include('./components/_products-slider-bestsellers.html')
+        @include('./components/_about-brand.html')
+        @include('./components/_products-slider-sale.html')
+        @include('./components/_exclusive.html')
+        @include('./components/_our-blog.html')
+        @include('./components/_get-sale.html')
+      </main>
+      @include('./components/_footer.html')
+    </div>
+
+    @include('./components/base/_scripts.html')
+  </body>
+</html>
+
+<!-- <label class="checkbox">
+  <input class="checkbox__input" type="checkbox" required />
+  <span class="checkbox__box"></span>
+  <span class="checkbox__text">
+    Соглашаюсь с<a href="#"> обработкой персональных данных</a>
+  </span> 
+</label> -->
