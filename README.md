@@ -10,4 +10,5 @@
 Контакты: https://vsulimovvv.github.io/sol/app/contacts.html  
 О бренде: https://vsulimovvv.github.io/sol/app/about.html  
 Карточка продукта: https://vsulimovvv.github.io/sol/app/product.html  
+Каталог: https://vsulimovvv.github.io/sol/app/catalog.html  
 Подарочная карта: https://vsulimovvv.github.io/sol/app/gift-card.html  
