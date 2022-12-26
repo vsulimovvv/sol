@@ -540,123 +540,65 @@
 
 
       <main class="main">
-        <section class="contacts">
+        <section class="gift-card">
   <div class="container">
-    <h1 class="visually-hidden">Контакты</h1>
-    <div class="contacts__wrapper">
-      <div class="contacts__left">
-        <div class="contacts__box">
-          <h3 class="contacts__heading">Шоурум sol concept store</h3>
-          <div class="contacts__text">
-            <p>
-              <svg
-                width="19"
-                height="13"
-                viewBox="0 0 19 13"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  fill-rule="evenodd"
-                  clip-rule="evenodd"
-                  d="M17.6092 11.1877L13.1833 0L9.45402 6.53491L5.72622 0L1.29884 11.1877H0V12.8749H6.68617V11.1877H5.68405L6.65854 8.39953L9.45402 13L12.2495 8.39953L13.224 11.1877H12.2219V12.8749H18.908V11.1877H17.6092Z"
-                  fill="#202020"
-                />
-              </svg>
-              Москва, м. 1905 года
-            </p>
-
-            <p>
-              ул. 2-я Черногрязская, д. 6/1 (ЖК Red Side, отдельный вход с
-              торца).
-            </p>
-            <p>В навигаторе укажите метку Sol Concept Store.</p>
-            <p>
-              Время работы: Пн — Пт 11: 00 — 20: 00, Сб — Вс 13: 00 — 20: 00
-            </p>
-          </div>
-        </div>
-        <div class="contacts__box">
-          <h3 class="contacts__heading">контакты</h3>
-          <div class="contacts__text">
-            <p>
-              Вы можете предварительно согласовать удобное время для визита:
-            </p>
-
-            <a
-              class="contacts__link contacts__link--phone"
-              href="tel:+79150440440"
-            >
-              +7 (915) 044 04 40
-            </a>
-            <a
-              class="contacts__link contacts__link--mail"
-              href="mailto:info@solconceptstopre.ru"
-            >
-              info@solconceptstopre.ru
-            </a>
-          </div>
-        </div>
+    <div class="gift-card__wrapper">
+      <div class="gift-card__img">
+        <picture>
+          <source srcset="img/gift-card.webp" type="image/webp" />
+          <img src="img/gift-card.jpg" alt="gift-card" />
+        </picture>
       </div>
+      <div class="gift-card__right">
+        <span class="gift-card__art">АРТ. FW2215020WS</span>
 
-      <div class="contacts__map map">
-        <iframe
-          src="https://yandex.ru/map-widget/v1/?um=constructor%3Ae01bee18cb76cc3caa0d9558d9f626b5d654d445b1008ef290157caa1b5be2e1&amp;source=constructor"
-          width="630"
-          height="630"
-          frameborder="0"
-        ></iframe>
+        <h1 class="gift-card__title">Подарочный сертификат</h1>
+        <span class="gift-card__price">10 000 ₽</span>
+
+        <div class="gift-card__boxes">
+          <div class="gift-card__box">
+            <span class="gift-card__name">Выберите тип</span>
+            <select class="gift-card__select">
+              <option value="1">Электронный</option>
+              <option value="2">Физический</option>
+            </select>
+          </div>
+
+          <div class="gift-card__box">
+            <span class="gift-card__name">Выберите тип</span>
+            <select class="gift-card__select">
+              <option value="1">10 000</option>
+              <option value="2">15 000</option>
+              <option value="2">20 000</option>
+              <option value="2">50 000</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="gift-card__btns">
+          <button class="gift-card__btn btn" type="button">
+            Добавить в корзину
+          </button>
+          <button class="gift-card__add-fav">
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M11.7758 6.44051L12.2627 6.91199L12.7497 6.44049C13.2109 5.99392 14.2764 5.19383 15.5537 4.85655C16.7878 4.53069 18.2074 4.63186 19.5569 5.9383C20.9013 7.23989 20.9971 8.59385 20.6669 9.76564C20.3218 10.9906 19.5005 12.0181 19.0379 12.4658C18.519 12.9681 16.7035 14.726 15.0178 16.3582L12.7648 18.5397L12.263 19.0256L11.7613 18.5398L9.50843 16.3582C7.82284 14.726 6.00747 12.9681 5.4886 12.4658C5.02609 12.0181 4.20468 10.9905 3.85943 9.76542C3.52915 8.59349 3.62476 7.23953 4.96896 5.9381C6.31819 4.63181 7.73771 4.53068 8.97175 4.85657C10.249 5.19388 11.3146 5.99397 11.7758 6.44051Z"
+                stroke="#202020"
+                stroke-width="1.4"
+              />
+            </svg>
+          </button>
+        </div>
       </div>
     </div>
   </div>
 </section>
-
-        <section class="showroom">
-  <div class="container">
-    <div class="showroom__wrapper">
-      <h2 class="showroom__title">Шоурум SOL И SOL Concept Club</h2>
-      <p class="showroom__text">
-        Наш шоурум сложно назвать магазином, слово арт-пространство подходит ему
-        больше . Это наш второй дом, потому здесь всё с душой и бушует реальная
-        жизнь: создаются картины, принты для коллекций, мы проводим здесь съёмки
-        — иногда вы можете прийти сюда и стать свидетелем, а может быть, и
-        участником.
-      </p>
-
-      <div class="showroom__preview"></div>
-    </div>
-  </div>
-</section>
-
-<div class="showroom-descr">
-  <div class="container">
-    <div class="showroom-descr__cols">
-      <div class="showroom-descr__left">
-        <picture>
-          <source srcset="img/showroom/2.webp" type="image/webp" />
-          <img class="showroom-descr__img" src="img/showroom/2.jpg" alt="img" />
-        </picture>
-      </div>
-      <div class="showroom-descr__right">
-        <p class="showroom-descr__text">
-          Шоурум — это также пространство для нашего комьюнити SOL Concept Club.
-          Вы можете стать частью нашего сообщества, посетив клиентский день,
-          кинопросмотр, лекцию, творческий мастер-класс, прийдя на вечеринку или
-          на практику йоги! Атмосфера сообщества лёгкая, доброжелательная и
-          весёлая.
-        </p>
-        <picture>
-          <source srcset="img/showroom/3.webp" type="image/webp" />
-          <img
-            class="showroom-descr__img showroom-descr__img--small"
-            src="img/showroom/3.jpg"
-            alt="img"
-          />
-        </picture>
-      </div>
-    </div>
-  </div>
-</div>
 
       </main>
       <footer class="footer">

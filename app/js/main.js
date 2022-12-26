@@ -1,9 +1,9 @@
 window.addEventListener('DOMContentLoaded', () => {
-  //   // * ===== Mask input
-  //   $('input[type="tel"]').mask('+7 (999) 999-99-99');
+  // * ===== Mask input
+  $('input[type="tel"]').mask('+7 (999) 999-99-99');
 
-  //   // * ===== Nice Select
-  //   // $('select').niceSelect();
+  // * ===== Nice Select
+  $('select').niceSelect();
 
   // * ===== Slider
   (function slider() {
@@ -37,6 +37,19 @@ window.addEventListener('DOMContentLoaded', () => {
           nextEl: '.values__slider .swiper-button-next',
           prevEl: '.values__slider .swiper-button-prev',
         },
+      });
+    });
+  })();
+  // * ===== Slider
+  (function slider() {
+    const sliderEl = document.querySelectorAll('.product__slider');
+    sliderEl.forEach((el) => {
+      new Swiper(el, {
+        pagination: {
+          el: '.swiper-pagination',
+          type: 'fraction',
+        },
+        slidesPerView: 1,
       });
     });
   })();
@@ -146,39 +159,39 @@ window.addEventListener('DOMContentLoaded', () => {
     });
   })();
 
-  //   // * ===== Modal
-  //   (function modals() {
-  //     function bindModal(openBtn, modal, close) {
-  //       const openBtnEl = document.querySelectorAll(openBtn);
-  //       const modalEl = document.querySelector(modal);
-  //       const closeEl = document.querySelectorAll(close);
-  //       const body = document.querySelector('body');
-  //       if (modalEl) {
-  //         openBtnEl.forEach((el) => {
-  //           el.addEventListener('click', (e) => {
-  //             if (e.target) {
-  //               e.preventDefault();
-  //             }
-  //             modalEl.classList.add('active');
-  //             body.classList.add('no-scroll');
-  //           });
-  //         });
-  //         closeEl.forEach((btn) => {
-  //           btn.addEventListener('click', (e) => {
-  //             modalEl.classList.remove('active');
-  //             body.classList.remove('no-scroll');
-  //           });
-  //         });
-  //         modalEl.addEventListener('click', (e) => {
-  //           if (e.target === modalEl) {
-  //             modalEl.classList.remove('active');
-  //             body.classList.remove('no-scroll');
-  //           }
-  //         });
-  //       }
-  //     }
-  //     bindModal('.online-booking-btn', '.popup--online-booking', '.popup__close');
-  //   })();
+  // * ===== Modal
+  (function modals() {
+    function bindModal(openBtn, modal, close) {
+      const openBtnEl = document.querySelectorAll(openBtn);
+      const modalEl = document.querySelector(modal);
+      const closeEl = document.querySelectorAll(close);
+      const body = document.querySelector('body');
+      if (modalEl) {
+        openBtnEl.forEach((el) => {
+          el.addEventListener('click', (e) => {
+            if (e.target) {
+              e.preventDefault();
+            }
+            modalEl.classList.add('active');
+            body.classList.add('no-scroll');
+          });
+        });
+        closeEl.forEach((btn) => {
+          btn.addEventListener('click', (e) => {
+            modalEl.classList.remove('active');
+            body.classList.remove('no-scroll');
+          });
+        });
+        modalEl.addEventListener('click', (e) => {
+          if (e.target === modalEl) {
+            modalEl.classList.remove('active');
+            body.classList.remove('no-scroll');
+          }
+        });
+      }
+    }
+    bindModal('.btn-sizes', '.popup--sizes', '.popup__close');
+  })();
 
   // * ===== Toggle Tabs
   function someTabs(headerSelector, tabSelector, contentSelector, activeClass) {
@@ -221,4 +234,10 @@ window.addEventListener('DOMContentLoaded', () => {
     });
   }
   someTabs('.news-tab', '.news-tab__top-btn', '.news-tab__content', 'active');
+  someTabs(
+    '.product-tabs',
+    '.product-tabs__top-btn',
+    '.product-tabs__content',
+    'active'
+  );
 });
