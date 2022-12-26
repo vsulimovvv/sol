@@ -72,21 +72,42 @@ window.addEventListener('DOMContentLoaded', () => {
     });
   })();
 
-  //   // * ===== Slider
-  //   (function slider() {
-  //     const sliderEl = document.querySelector('.price-list-top__slider');
-  //     new Swiper(sliderEl, {
-  //       slidesPerView: 'auto',
-  //       centeredSlides: true,
-  //       slideToClickedSlide: true,
-  //       initialSlide: 4,
-  //       spaceBetween: 20,
-  //       navigation: {
-  //         nextEl: '.price-list-top__slider .swiper-button-next',
-  //         prevEl: '.price-list-top__slider .swiper-button-prev',
-  //       },
-  //     });
-  //   })();
+  (function handlesSlider() {
+    const parent = document.querySelector('.range-slider--cost');
+
+    if (parent) {
+      const handlesSlider = parent.querySelector('#slider-handles');
+      const minStep = parent.querySelector('.range-slider__min');
+      const maxStep = parent.querySelector('.range-slider__max');
+      const inputs = [minStep, maxStep];
+
+      noUiSlider.create(handlesSlider, {
+        start: [9000, 200000],
+        connect: true,
+        range: {
+          min: [9000],
+          max: [200000],
+        },
+        format: wNumb({
+          decimals: 0,
+          thousand: ' ',
+          suffix: ' ',
+        }),
+      });
+
+      handlesSlider.noUiSlider.on('update', function (values, handle) {
+        inputs[handle].value = values[handle];
+      });
+
+      minStep.addEventListener('change', function () {
+        handlesSlider.noUiSlider.set([this.value, null]);
+      });
+
+      maxStep.addEventListener('change', function () {
+        handlesSlider.noUiSlider.set([null, this.value]);
+      });
+    }
+  })();
 
   // * ===== Accordion
   const toggleAccordion = (accordionControl, accordionContent, accordion) => {
@@ -155,6 +176,24 @@ window.addEventListener('DOMContentLoaded', () => {
     menuCloseBtn.addEventListener('click', (e) => {
       menu.classList.remove('active');
       overlay.classList.remove('active');
+      body.classList.remove('no-scroll');
+    });
+  })();
+
+  // * ===== Show Filters
+  (function showFilters() {
+    const menuBtn = document.querySelector('.catalog-filter__btn');
+    const menu = document.querySelector('.filters');
+    const menuCloseBtn = document.querySelector('.filters__close');
+    const body = document.querySelector('body');
+
+    menuBtn.addEventListener('click', (e) => {
+      menu.classList.toggle('active');
+      body.classList.toggle('no-scroll');
+    });
+
+    menuCloseBtn.addEventListener('click', (e) => {
+      menu.classList.remove('active');
       body.classList.remove('no-scroll');
     });
   })();
