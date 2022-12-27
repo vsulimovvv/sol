@@ -172,7 +172,7 @@
 
 
     <div class="site-wrapper">
-      <header class="header header--sticky">
+      <header class="header header--relative">
   <!-- Mobile Menu -->
   <div class="overlay"></div>
 
@@ -389,6 +389,38 @@
   </div>
   <!-- Mobile Menu -->
 
+  <div class="site-note">
+    <div class="container">
+      <div class="site-note__inner">
+        <p>Бесплатная доставка от 30 000 рублей</p>
+        <button class="site-note__close">
+          <svg
+            width="25"
+            height="25"
+            viewBox="0 0 25 25"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M18 7L8 17"
+              stroke="white"
+              stroke-width="1.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+            <path
+              d="M8 7L18 17"
+              stroke="white"
+              stroke-width="1.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+        </button>
+      </div>
+    </div>
+  </div>
+
   <div class="container">
     <div class="header__wrapper">
       <div class="header__right">
@@ -539,7 +571,30 @@
 </header>
 
 
-      <main class="main"><section class="product">
+      <main class="main">
+        <div class="breadcrumbs">
+          <div class="container">
+            <ul class="breadcrumbs__list">
+              <li class="breadcrumbs__item">
+                <a class="breadcrumbs__link" href="index.html">Главная</a>
+              </li>
+
+              <li class="breadcrumbs__item">
+                <a class="breadcrumbs__link" href="#"> Магазин </a>
+              </li>
+              <li class="breadcrumbs__item">
+                <a class="breadcrumbs__link" href="#"> Блузки и рубашки </a>
+              </li>
+              <li class="breadcrumbs__item">
+                <a class="breadcrumbs__link breadcrumbs__link--active">
+                  Накидка из плиссированной сетчатой ткани
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <section class="product">
   <div class="container">
     <div class="product__wrapper">
       <div class="product__slider swiper">
@@ -677,7 +732,222 @@
     </div>
   </div>
 </section>
-</main>
+
+        <section class="products-slider">
+  <div class="container">
+    <div class="section-top">
+      <span class="section-top__text">ВАМ МОЖЕТ ПОНРАВИТЬСЯ</span>
+      <h2 class="section-top__title">SOL RECOMMENDS</h2>
+    </div>
+
+    <div class="products-slider__slider swiper">
+      <ul class="products-slider__slides swiper-wrapper">
+        <li class="products-slider__slide swiper-slide">
+          <article class="product-card">
+            <button class="product-card__fav">
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M11.7758 6.44051L12.2627 6.91199L12.7497 6.44049C13.2109 5.99392 14.2764 5.19383 15.5537 4.85655C16.7878 4.53069 18.2074 4.63186 19.5569 5.9383C20.9013 7.23989 20.9971 8.59385 20.6669 9.76564C20.3218 10.9906 19.5005 12.0181 19.0379 12.4658C18.519 12.9681 16.7035 14.726 15.0178 16.3582L12.7648 18.5397L12.263 19.0256L11.7613 18.5398L9.50843 16.3582C7.82284 14.726 6.00747 12.9681 5.4886 12.4658C5.02609 12.0181 4.20468 10.9905 3.85943 9.76542C3.52915 8.59349 3.62476 7.23953 4.96896 5.9381C6.31819 4.63181 7.73771 4.53068 8.97175 4.85657C10.249 5.19388 11.3146 5.99397 11.7758 6.44051Z"
+                  stroke="#202020"
+                  stroke-width="1.4"
+                />
+              </svg>
+            </button>
+            <a class="product-card__top" href="#">
+              <div class="product-card__badge">BESTSELLER</div>
+              <picture>
+                <source srcset="img/products/1.webp" type="image/webp" />
+                <img src="img/products/1.png" alt="img" />
+              </picture>
+            </a>
+            <div class="product-card__body">
+              <h3 class="product-card__title">
+                <a href="#">БЛУЗКА COCO BLACK LACE</a>
+              </h3>
+              <span class="product-card__price">7 500 ₽</span>
+            </div>
+          </article>
+        </li>
+        <li class="products-slider__slide swiper-slide">
+          <article class="product-card">
+            <button class="product-card__fav">
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M11.7758 6.44051L12.2627 6.91199L12.7497 6.44049C13.2109 5.99392 14.2764 5.19383 15.5537 4.85655C16.7878 4.53069 18.2074 4.63186 19.5569 5.9383C20.9013 7.23989 20.9971 8.59385 20.6669 9.76564C20.3218 10.9906 19.5005 12.0181 19.0379 12.4658C18.519 12.9681 16.7035 14.726 15.0178 16.3582L12.7648 18.5397L12.263 19.0256L11.7613 18.5398L9.50843 16.3582C7.82284 14.726 6.00747 12.9681 5.4886 12.4658C5.02609 12.0181 4.20468 10.9905 3.85943 9.76542C3.52915 8.59349 3.62476 7.23953 4.96896 5.9381C6.31819 4.63181 7.73771 4.53068 8.97175 4.85657C10.249 5.19388 11.3146 5.99397 11.7758 6.44051Z"
+                  stroke="#202020"
+                  stroke-width="1.4"
+                />
+              </svg>
+            </button>
+            <a class="product-card__top" href="#">
+              <picture>
+                <source srcset="img/products/2.webp" type="image/webp" />
+                <img src="img/products/2.png" alt="img" />
+              </picture>
+            </a>
+            <div class="product-card__body">
+              <h3 class="product-card__title">
+                <a href="#">БЛУЗКА COCO BLACK LACE</a>
+              </h3>
+              <span class="product-card__price">7 500 ₽</span>
+            </div>
+          </article>
+        </li>
+        <li class="products-slider__slide swiper-slide">
+          <article class="product-card">
+            <button class="product-card__fav">
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M11.7758 6.44051L12.2627 6.91199L12.7497 6.44049C13.2109 5.99392 14.2764 5.19383 15.5537 4.85655C16.7878 4.53069 18.2074 4.63186 19.5569 5.9383C20.9013 7.23989 20.9971 8.59385 20.6669 9.76564C20.3218 10.9906 19.5005 12.0181 19.0379 12.4658C18.519 12.9681 16.7035 14.726 15.0178 16.3582L12.7648 18.5397L12.263 19.0256L11.7613 18.5398L9.50843 16.3582C7.82284 14.726 6.00747 12.9681 5.4886 12.4658C5.02609 12.0181 4.20468 10.9905 3.85943 9.76542C3.52915 8.59349 3.62476 7.23953 4.96896 5.9381C6.31819 4.63181 7.73771 4.53068 8.97175 4.85657C10.249 5.19388 11.3146 5.99397 11.7758 6.44051Z"
+                  stroke="#202020"
+                  stroke-width="1.4"
+                />
+              </svg>
+            </button>
+            <a class="product-card__top" href="#">
+              <picture>
+                <source srcset="img/products/3.webp" type="image/webp" />
+                <img src="img/products/3.png" alt="img" />
+              </picture>
+            </a>
+            <div class="product-card__body">
+              <h3 class="product-card__title">
+                <a href="#">БЛУЗКА COCO BLACK LACE</a>
+              </h3>
+              <span class="product-card__price">7 500 ₽</span>
+            </div>
+          </article>
+        </li>
+        <li class="products-slider__slide swiper-slide">
+          <article class="product-card">
+            <button class="product-card__fav">
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M11.7758 6.44051L12.2627 6.91199L12.7497 6.44049C13.2109 5.99392 14.2764 5.19383 15.5537 4.85655C16.7878 4.53069 18.2074 4.63186 19.5569 5.9383C20.9013 7.23989 20.9971 8.59385 20.6669 9.76564C20.3218 10.9906 19.5005 12.0181 19.0379 12.4658C18.519 12.9681 16.7035 14.726 15.0178 16.3582L12.7648 18.5397L12.263 19.0256L11.7613 18.5398L9.50843 16.3582C7.82284 14.726 6.00747 12.9681 5.4886 12.4658C5.02609 12.0181 4.20468 10.9905 3.85943 9.76542C3.52915 8.59349 3.62476 7.23953 4.96896 5.9381C6.31819 4.63181 7.73771 4.53068 8.97175 4.85657C10.249 5.19388 11.3146 5.99397 11.7758 6.44051Z"
+                  stroke="#202020"
+                  stroke-width="1.4"
+                />
+              </svg>
+            </button>
+            <a class="product-card__top" href="#">
+              <div class="product-card__badge">BESTSELLER</div>
+              <picture>
+                <source srcset="img/products/1.webp" type="image/webp" />
+                <img src="img/products/1.png" alt="img" />
+              </picture>
+            </a>
+            <div class="product-card__body">
+              <h3 class="product-card__title">
+                <a href="#">БЛУЗКА COCO BLACK LACE</a>
+              </h3>
+              <span class="product-card__price">7 500 ₽</span>
+            </div>
+          </article>
+        </li>
+        <li class="products-slider__slide swiper-slide">
+          <article class="product-card">
+            <button class="product-card__fav">
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M11.7758 6.44051L12.2627 6.91199L12.7497 6.44049C13.2109 5.99392 14.2764 5.19383 15.5537 4.85655C16.7878 4.53069 18.2074 4.63186 19.5569 5.9383C20.9013 7.23989 20.9971 8.59385 20.6669 9.76564C20.3218 10.9906 19.5005 12.0181 19.0379 12.4658C18.519 12.9681 16.7035 14.726 15.0178 16.3582L12.7648 18.5397L12.263 19.0256L11.7613 18.5398L9.50843 16.3582C7.82284 14.726 6.00747 12.9681 5.4886 12.4658C5.02609 12.0181 4.20468 10.9905 3.85943 9.76542C3.52915 8.59349 3.62476 7.23953 4.96896 5.9381C6.31819 4.63181 7.73771 4.53068 8.97175 4.85657C10.249 5.19388 11.3146 5.99397 11.7758 6.44051Z"
+                  stroke="#202020"
+                  stroke-width="1.4"
+                />
+              </svg>
+            </button>
+            <a class="product-card__top" href="#">
+              <div class="product-card__badge">New</div>
+              <picture>
+                <source srcset="img/products/2.webp" type="image/webp" />
+                <img src="img/products/2.png" alt="img" />
+              </picture>
+            </a>
+            <div class="product-card__body">
+              <h3 class="product-card__title">
+                <a href="#">БЛУЗКА COCO BLACK LACE</a>
+              </h3>
+              <span class="product-card__price">7 500 ₽</span>
+            </div>
+          </article>
+        </li>
+        <li class="products-slider__slide swiper-slide">
+          <article class="product-card">
+            <button class="product-card__fav">
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M11.7758 6.44051L12.2627 6.91199L12.7497 6.44049C13.2109 5.99392 14.2764 5.19383 15.5537 4.85655C16.7878 4.53069 18.2074 4.63186 19.5569 5.9383C20.9013 7.23989 20.9971 8.59385 20.6669 9.76564C20.3218 10.9906 19.5005 12.0181 19.0379 12.4658C18.519 12.9681 16.7035 14.726 15.0178 16.3582L12.7648 18.5397L12.263 19.0256L11.7613 18.5398L9.50843 16.3582C7.82284 14.726 6.00747 12.9681 5.4886 12.4658C5.02609 12.0181 4.20468 10.9905 3.85943 9.76542C3.52915 8.59349 3.62476 7.23953 4.96896 5.9381C6.31819 4.63181 7.73771 4.53068 8.97175 4.85657C10.249 5.19388 11.3146 5.99397 11.7758 6.44051Z"
+                  stroke="#202020"
+                  stroke-width="1.4"
+                />
+              </svg>
+            </button>
+            <a class="product-card__top" href="#">
+              <picture>
+                <source srcset="img/products/3.webp" type="image/webp" />
+                <img src="img/products/3.png" alt="img" />
+              </picture>
+            </a>
+            <div class="product-card__body">
+              <h3 class="product-card__title">
+                <a href="#">БЛУЗКА COCO BLACK LACE</a>
+              </h3>
+              <span class="product-card__price">7 500 ₽</span>
+            </div>
+          </article>
+        </li>
+      </ul>
+
+      <button
+        class="swiper-button-prev"
+        type="button"
+        aria-label="Предыдущий"
+      ></button>
+      <button
+        class="swiper-button-next"
+        type="button"
+        aria-label="Следующий"
+      ></button>
+    </div>
+  </div>
+</section>
+
+      </main>
       <footer class="footer">
   <div class="container">
     <div class="footer__wrapper">

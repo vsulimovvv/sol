@@ -5,6 +5,17 @@ window.addEventListener('DOMContentLoaded', () => {
   // * ===== Nice Select
   $('select').niceSelect();
 
+  (function closeNote() {
+    const closeBtn = document.querySelector('.site-note__close');
+    const content = document.querySelector('.site-note');
+
+    if (closeBtn) {
+      closeBtn.addEventListener('click', (e) => {
+        content.style.display = 'none';
+      });
+    }
+  })();
+
   // * ===== Slider
   (function slider() {
     const sliderEl = document.querySelectorAll('.articles-slider__slider');
@@ -133,7 +144,7 @@ window.addEventListener('DOMContentLoaded', () => {
   (function fixedHeader() {
     function scrollHeader() {
       const nav = document.querySelector('header');
-      if (this.scrollY >= 20) {
+      if (this.scrollY >= 70) {
         nav.classList.add('scroll-header');
       } else {
         nav.classList.remove('scroll-header');
@@ -145,7 +156,7 @@ window.addEventListener('DOMContentLoaded', () => {
     // ! Change
     function changeBg() {
       const header = document.querySelector('header');
-      if (window.pageYOffset >= 20) {
+      if (window.pageYOffset >= 70) {
         header.classList.add('scroll-header');
       }
     }
@@ -187,15 +198,17 @@ window.addEventListener('DOMContentLoaded', () => {
     const menuCloseBtn = document.querySelector('.filters__close');
     const body = document.querySelector('body');
 
-    menuBtn.addEventListener('click', (e) => {
-      menu.classList.toggle('active');
-      body.classList.toggle('no-scroll');
-    });
+    if (menu) {
+      menuBtn.addEventListener('click', (e) => {
+        menu.classList.toggle('active');
+        body.classList.toggle('no-scroll');
+      });
 
-    menuCloseBtn.addEventListener('click', (e) => {
-      menu.classList.remove('active');
-      body.classList.remove('no-scroll');
-    });
+      menuCloseBtn.addEventListener('click', (e) => {
+        menu.classList.remove('active');
+        body.classList.remove('no-scroll');
+      });
+    }
   })();
 
   // * ===== Modal
