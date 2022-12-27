@@ -1692,7 +1692,7 @@ body.no-scroll {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  background-position-y: 10%;
+  background-position-y: 1%;
 }
 @media (max-width: 1275px) {
   .hero__wrapper {
@@ -2169,6 +2169,115 @@ body.no-scroll {
   -webkit-transform: scale(1);
       -ms-transform: scale(1);
           transform: scale(1);
+}
+.menu__link:hover + .dropmenu {
+  opacity: 1;
+  visibility: visible;
+  -webkit-transform: translateY(0);
+      -ms-transform: translateY(0);
+          transform: translateY(0);
+}
+
+.dropmenu {
+  z-index: 10;
+  width: 100%;
+  position: fixed;
+  left: 0;
+  top: 120px;
+  background-color: var(--color-white);
+  padding: 30px 25px;
+  -webkit-transition: 450ms ease;
+  -o-transition: 450ms ease;
+  transition: 450ms ease;
+  -webkit-transition-delay: 150ms;
+       -o-transition-delay: 150ms;
+          transition-delay: 150ms;
+  -webkit-transform: translateY(-10px);
+      -ms-transform: translateY(-10px);
+          transform: translateY(-10px);
+  opacity: 0;
+  visibility: hidden;
+}
+@media (max-width: 991.98px) {
+  .dropmenu {
+    display: none;
+  }
+}
+.dropmenu.active {
+  opacity: 1;
+  visibility: visible;
+  -webkit-transform: translateY(0);
+      -ms-transform: translateY(0);
+          transform: translateY(0);
+}
+.dropmenu:hover {
+  opacity: 1;
+  visibility: visible;
+  -webkit-transform: translateY(0);
+      -ms-transform: translateY(0);
+          transform: translateY(0);
+}
+.dropmenu__name {
+  font-size: 15px;
+  line-height: 1;
+  margin-bottom: 28px;
+  text-transform: uppercase;
+}
+.dropmenu__grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (auto)[3];
+  grid-template-columns: repeat(3, auto);
+  gap: 40px;
+}
+.dropmenu__col:nth-child(1) .dropmenu__item:nth-child(1) .dropmenu__link {
+  color: var(--color-dark);
+}
+.dropmenu__col:nth-child(1) .dropmenu__link {
+  text-transform: uppercase;
+  color: var(--color-04);
+  font-weight: 600;
+  font-size: 20px;
+}
+.dropmenu__link {
+  display: block;
+  width: 100%;
+  padding: 12px 0;
+  font-size: 15px;
+  line-height: 1;
+  font-weight: 300;
+  color: var(--color-dark);
+  -webkit-transition: 150ms ease;
+  -o-transition: 150ms ease;
+  transition: 150ms ease;
+}
+.dropmenu__link:hover {
+  color: var(--color-04);
+}
+.dropmenu__all {
+  display: inline-block;
+  margin-top: 40px;
+  font-size: 14px;
+  line-height: 1.2;
+  letter-spacing: 0.08em;
+  border-bottom: 1px solid var(--color-dark);
+}
+.dropmenu__img {
+  width: 470px;
+  height: 100%;
+  -ms-grid-column-align: end;
+      justify-self: end;
+}
+@media (max-width: 1275px) {
+  .dropmenu__img {
+    width: calc(350px + 120 * (100vw - 991px) / 284);
+  }
+}
+.dropmenu__img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .accordion {

@@ -421,6 +421,116 @@
     </div>
   </div>
 
+  <div class="dropmenu" data-target="link-shop">
+    <div class="container">
+      <div class="dropmenu__grid">
+        <div class="dropmenu__col">
+          <ul class="dropmenu__list">
+            <li class="dropmenu__item">
+              <a class="dropmenu__link">КАТАЛОГ</a>
+            </li>
+            <li class="dropmenu__item">
+              <a class="dropmenu__link" href="#">SPORT CHIC</a>
+            </li>
+            <li class="dropmenu__item">
+              <a class="dropmenu__link" href="#">SOL EVENING</a>
+            </li>
+            <li class="dropmenu__item">
+              <a class="dropmenu__link" href="#">АКСЕССУАРЫ</a>
+            </li>
+            <li class="dropmenu__item">
+              <a class="dropmenu__link" href="#">SOL VINTAGE</a>
+            </li>
+            <li class="dropmenu__item">
+              <a class="dropmenu__link" href="#">ART GALLERY</a>
+            </li>
+          </ul>
+        </div>
+        <div class="dropmenu__col">
+          <p class="dropmenu__name">ВСЕ КАТЕГОРИИ</p>
+          <ul class="dropmenu__list">
+            <li class="dropmenu__item">
+              <a class="dropmenu__link" href="#">Блузки | Рубашки</a>
+            </li>
+            <li class="dropmenu__item">
+              <a class="dropmenu__link" href="#">Брюки | Джинсы | Леггинсы</a>
+            </li>
+            <li class="dropmenu__item">
+              <a class="dropmenu__link" href="#">Верхняя одежда</a>
+            </li>
+            <li class="dropmenu__item">
+              <a class="dropmenu__link" href="#">Кимоно</a>
+            </li>
+            <li class="dropmenu__item">
+              <a class="dropmenu__link" href="#">Нижнее белье</a>
+            </li>
+            <li class="dropmenu__item">
+              <a class="dropmenu__link" href="#">Пиджаки | Костюмы | Жилеты</a>
+            </li>
+            <li class="dropmenu__item">
+              <a class="dropmenu__link" href="#">Платья</a>
+            </li>
+            <li class="dropmenu__item">
+              <a class="dropmenu__link" href="#">Футболки | Топы | Майки</a>
+            </li>
+            <li class="dropmenu__item">
+              <a class="dropmenu__link" href="#"
+                >Худи | Толстовки | Лонгсливы</a
+              >
+            </li>
+            <li class="dropmenu__item">
+              <a class="dropmenu__link" href="#">Шорты</a>
+            </li>
+            <li class="dropmenu__item">
+              <a class="dropmenu__link" href="#">Юбки</a>
+            </li>
+          </ul>
+
+          <a class="dropmenu__all" href="#">открыть все</a>
+        </div>
+        <div class="dropmenu__img">
+          <picture>
+            <source srcset="img/dropdown-shop-img.webp" type="image/webp" />
+            <img src="img/dropdown-shop-img.jpg" alt="img" />
+          </picture>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="dropmenu" data-target="link-customer">
+    <div class="container">
+      <div class="dropmenu__grid">
+        <div class="dropmenu__col">
+          <ul class="dropmenu__list">
+            <li class="dropmenu__item">
+              <a class="dropmenu__link">ПРОГРАММА ЛОЯЛЬНОСТИ</a>
+            </li>
+            <li class="dropmenu__item">
+              <a class="dropmenu__link" href="#">GIFT CARD</a>
+            </li>
+            <li class="dropmenu__item">
+              <a class="dropmenu__link" href="#">ДОСТАВКА И ОПЛАТА</a>
+            </li>
+            <li class="dropmenu__item">
+              <a class="dropmenu__link" href="#">ПРАВИЛА ВОЗВРАТА</a>
+            </li>
+            <li class="dropmenu__item">
+              <a class="dropmenu__link" href="#">КОНТАКТЫ</a>
+            </li>
+          </ul>
+        </div>
+        <div class="dropmenu__col"></div>
+        <div class="dropmenu__img">
+          <picture>
+            <source srcset="img/dropdown-customer-img.webp" type="image/webp" />
+            <img src="img/dropdown-customer-img.jpg" alt="img" />
+          </picture>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <div class="container">
     <div class="header__wrapper">
       <div class="header__right">
@@ -454,9 +564,13 @@
 
       <nav class="menu">
         <ul class="menu__list">
-          <li class="menu__item"><a class="menu__link" href="#">МАГАЗИН</a></li>
           <li class="menu__item">
-            <a class="menu__link" href="#">ПОКУПАТЕЛЯМ</a>
+            <a class="menu__link" data-target="link-shop" href="#">МАГАЗИН</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" data-target="link-customer" href="#"
+              >ПОКУПАТЕЛЯМ</a
+            >
           </li>
           <li class="menu__item">
             <a class="menu__link" href="#">О БРЕНДЕ</a>
@@ -831,6 +945,146 @@
     </div>
   </div>
 </section>
+
+<!-- <section class="categories">
+  <div class="container">
+    <div class="categories__wrapper">
+      <div class="categories__img">
+        <picture>
+          <source srcset="img/categories/3.webp" type="image/webp" />
+          <img src="img/categories/3.png" alt="img" />
+        </picture>
+      </div>
+      <div class="categories__right">
+        <h2 class="categories__title">Категории</h2>
+
+        <div class="categories__links">
+          <a class="categories__category" href="#">ОДЕЖДА</a>
+          <a class="categories__category active" href="#">АКСЕССУАРЫ</a>
+          <a class="categories__category" href="#">SPORT CHIC</a>
+          <a class="categories__category" href="#">SOL EVENNING</a>
+          <a class="categories__category" href="#">ART GALLERY</a>
+        </div>
+
+        <div class="categories__text">
+          <p>
+            SOL когда-то начался с чепчика и косынки для fashion съёмки — теперь
+            наш бренд славится утонченными и концептуальными аксессуарами,
+            которые всегда остаются в тренде и подчеркнут любой, даже самый
+            базовый образ.
+          </p>
+
+          <a class="categories__link" href="#">открыть все модели</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section> -->
+
+<!-- <section class="categories">
+  <div class="container">
+    <div class="categories__wrapper">
+      <div class="categories__img">
+        <picture>
+          <source srcset="img/categories/3.webp" type="image/webp" />
+          <img src="img/categories/3.png" alt="img" />
+        </picture>
+      </div>
+      <div class="categories__right">
+        <h2 class="categories__title">Категории</h2>
+
+        <div class="categories__links">
+          <a class="categories__category" href="#">ОДЕЖДА</a>
+          <a class="categories__category" href="#">АКСЕССУАРЫ</a>
+          <a class="categories__category active" href="#">SPORT CHIC</a>
+          <a class="categories__category" href="#">SOL EVENNING</a>
+          <a class="categories__category" href="#">ART GALLERY</a>
+        </div>
+
+        <div class="categories__text">
+          <p>
+            SOL когда-то начался с чепчика и косынки для fashion съёмки — теперь
+            наш бренд славится утонченными и концептуальными аксессуарами,
+            которые всегда остаются в тренде и подчеркнут любой, даже самый
+            базовый образ.
+          </p>
+
+          <a class="categories__link" href="#">открыть все модели</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section> -->
+
+<!-- <section class="categories">
+  <div class="container">
+    <div class="categories__wrapper">
+      <div class="categories__img">
+        <picture>
+          <source srcset="img/categories/4.webp" type="image/webp" />
+          <img src="img/categories/4.png" alt="img" />
+        </picture>
+      </div>
+      <div class="categories__right">
+        <h2 class="categories__title">Категории</h2>
+
+        <div class="categories__links">
+          <a class="categories__category" href="#">ОДЕЖДА</a>
+          <a class="categories__category" href="#">АКСЕССУАРЫ</a>
+          <a class="categories__category" href="#">SPORT CHIC</a>
+          <a class="categories__category active" href="#">SOL EVENNING</a>
+          <a class="categories__category" href="#">ART GALLERY</a>
+        </div>
+
+        <div class="categories__text">
+          <p>
+            SOL когда-то начался с чепчика и косынки для fashion съёмки — теперь
+            наш бренд славится утонченными и концептуальными аксессуарами,
+            которые всегда остаются в тренде и подчеркнут любой, даже самый
+            базовый образ.
+          </p>
+
+          <a class="categories__link" href="#">открыть все модели</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section> -->
+
+<!-- <section class="categories">
+  <div class="container">
+    <div class="categories__wrapper">
+      <div class="categories__img">
+        <picture>
+          <source srcset="img/categories/5.webp" type="image/webp" />
+          <img src="img/categories/5.png" alt="img" />
+        </picture>
+      </div>
+      <div class="categories__right">
+        <h2 class="categories__title">Категории</h2>
+
+        <div class="categories__links">
+          <a class="categories__category" href="#">ОДЕЖДА</a>
+          <a class="categories__category" href="#">АКСЕССУАРЫ</a>
+          <a class="categories__category" href="#">SPORT CHIC</a>
+          <a class="categories__category" href="#">SOL EVENNING</a>
+          <a class="categories__category active" href="#">ART GALLERY</a>
+        </div>
+
+        <div class="categories__text">
+          <p>
+            SOL когда-то начался с чепчика и косынки для fashion съёмки — теперь
+            наш бренд славится утонченными и концептуальными аксессуарами,
+            которые всегда остаются в тренде и подчеркнут любой, даже самый
+            базовый образ.
+          </p>
+
+          <a class="categories__link" href="#">открыть все модели</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section> -->
 
         <section class="products-slider">
   <div class="container">
