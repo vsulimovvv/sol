@@ -571,8 +571,7 @@ body.no-scroll {
   padding: 20px;
   z-index: 3;
   min-height: 510px;
-  top: 260px;
-  display: none;
+  top: 320px;
   opacity: 0;
   visibility: hidden;
   -webkit-transform: translateY(-20px);
