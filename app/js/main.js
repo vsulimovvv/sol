@@ -278,6 +278,7 @@ window.addEventListener('DOMContentLoaded', () => {
       }
     }
     bindModal('.btn-sizes', '.popup--sizes', '.popup__close');
+    bindModal('.btn-reset-pas', '.popup--reset-pas', '.popup__close');
   })();
 
   // * ===== Toggle Tabs

@@ -125,3 +125,90 @@
     </div>
   </div>
 </div>
+
+<div class="popup popup--reset-pas">
+  <div class="popup__container">
+    <button class="popup__close" type="button" aria-label="Закрыть">
+      <svg width="15" height="15">
+        <use xlink:href="img/sprite.svg#close"></use>
+      </svg>
+    </button>
+    <div class="popup__wrapper">
+      <div class="popup__top">
+        <span class="popup__title"> Восстановление пароля </span>
+        <p class="popup__text">
+          На указанный вами номер телефона будет отправлен код для
+          восстановления пароля.
+        </p>
+      </div>
+
+      <form class="popup__form popup-form">
+        <label class="popup-form__group">
+          <input
+            class="popup-form__input"
+            type="tel"
+            placeholder="+7 000 000 00 00"
+          />
+        </label>
+
+        <button class="popup-form__btn btn" type="button">ВОССТАНОВИТЬ</button>
+      </form>
+    </div>
+  </div>
+</div>
+
+<div class="popup popup--new-pas">
+  <div class="popup__container">
+    <button class="popup__close" type="button" aria-label="Закрыть">
+      <svg width="15" height="15">
+        <use xlink:href="img/sprite.svg#close"></use>
+      </svg>
+    </button>
+    <div class="popup__wrapper">
+      <div class="popup__top">
+        <span class="popup__title"> Создайте новый пароль </span>
+      </div>
+
+      <form class="popup__form popup-form">
+        <label class="popup-form__group">
+          <input
+            class="popup-form__input"
+            type="password"
+            placeholder="Новый пароль"
+          />
+        </label>
+        <label class="popup-form__group">
+          <input
+            class="popup-form__input"
+            type="password"
+            placeholder="Подтвердите пароль"
+          />
+        </label>
+
+        <button class="popup-form__btn btn" type="button">
+          ПОДТВЕРДИТЬ ПАРОЛЬ
+        </button>
+      </form>
+    </div>
+  </div>
+</div>
+
+<div class="popup popup--log-out">
+  <div class="popup__container">
+    <button class="popup__close" type="button" aria-label="Закрыть">
+      <svg width="15" height="15">
+        <use xlink:href="img/sprite.svg#close"></use>
+      </svg>
+    </button>
+    <div class="popup__wrapper">
+      <div class="popup__top">
+        <span class="popup__title">Вы уверены, что хотите выйти?</span>
+      </div>
+
+      <div class="popup__btns">
+        <button class="popup__btn btn" type="button">Выйти</button>
+        <button class="popup__btn btn popup__btn--cancel">Отменить</button>
+      </div>
+    </div>
+  </div>
+</div>
