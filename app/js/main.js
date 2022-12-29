@@ -25,24 +25,6 @@ window.addEventListener('DOMContentLoaded', () => {
     });
   })();
 
-  // * ==== Dropdown
-  document.addEventListener('click', (e) => {
-    const isDropdownButton = e.target.matches('[data-dropdown-button]');
-    if (!isDropdownButton && e.target.closest('[data-dropdown]') != null)
-      return;
-
-    let currentDropdown;
-    if (isDropdownButton) {
-      currentDropdown = e.target.closest('[data-dropdown]');
-      currentDropdown.classList.toggle('active');
-    }
-
-    document.querySelectorAll('[data-dropdown].active').forEach((dropdown) => {
-      if (dropdown === currentDropdown) return;
-      dropdown.classList.remove('active');
-    });
-  });
-
   (function closeNote() {
     const closeBtn = document.querySelector('.site-note__close');
     const content = document.querySelector('.site-note');
@@ -113,19 +95,6 @@ window.addEventListener('DOMContentLoaded', () => {
       });
     });
   })();
-  // * ===== Slider
-  (function slider() {
-    const sliderEl = document.querySelectorAll('.product__slider');
-    sliderEl.forEach((el) => {
-      new Swiper(el, {
-        pagination: {
-          el: '.swiper-pagination',
-          type: 'fraction',
-        },
-        slidesPerView: 1,
-      });
-    });
-  })();
 
   // * ===== Slider
   (function slider() {
@@ -147,7 +116,7 @@ window.addEventListener('DOMContentLoaded', () => {
             centeredSlides: true,
             initialSlide: 2,
           },
-          768: {
+          576: {
             centeredSlides: false,
             initialSlide: 1,
           },
@@ -368,4 +337,18 @@ window.addEventListener('DOMContentLoaded', () => {
     'active'
   );
   someTabs('.types-tabs', '.types-tabs__btn', '.types-tabs__content', 'active');
+
+  // * ===== Slider
+  (function slider() {
+    const sliderEl = document.querySelectorAll('.product__slider');
+    sliderEl.forEach((el) => {
+      new Swiper(el, {
+        pagination: {
+          el: '.swiper-pagination',
+          type: 'fraction',
+        },
+        slidesPerView: 1,
+      });
+    });
+  })();
 });
