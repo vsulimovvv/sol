@@ -1,5 +1,123 @@
 <section class="profile">
-  <div class="container">
-    
+  <div class="profile-box">
+    <h2 class="profile-box__title">Персональная информация</h2>
+
+    <form class="form-profile">
+      <div class="form-profile__group">
+        <label class="form-profile__label">Фамилия</label>
+        <input class="form-profile__input" type="text" value="Нестерова" />
+      </div>
+      <div class="form-profile__group">
+        <label class="form-profile__label">Имя</label>
+        <input class="form-profile__input" type="text" value="Анастасия" />
+      </div>
+      <div class="form-profile__group">
+        <label class="form-profile__label">Отчество</label>
+        <input class="form-profile__input" type="text" value="Ивановна" />
+      </div>
+      <div class="form-profile__group">
+        <label class="form-profile__label">Дата рождения</label>
+        <div class="form-profile__dob">
+          <select class="form-profile__select select">
+            <option value="1">19</option>
+            <option value="2">19</option>
+            <option value="3">19</option>
+          </select>
+          <select class="form-profile__select select">
+            <option value="1">марта</option>
+            <option value="2">марта</option>
+            <option value="3">марта</option>
+          </select>
+          <select class="form-profile__select select">
+            <option value="1">1997</option>
+            <option value="2">1997</option>
+            <option value="3">1997</option>
+          </select>
+        </div>
+      </div>
+      <div class="form-profile__group">
+        <label class="form-profile__label">Email</label>
+        <input
+          class="form-profile__input"
+          type="text"
+          value="example@site.com"
+        />
+      </div>
+      <div class="form-profile__group">
+        <label class="form-profile__label">Телефон</label>
+        <div class="form-profile__phone">
+          <select class="form-profile__select select">
+            <option value="1">+7</option>
+            <option value="2">+7</option>
+            <option value="3">+7</option>
+          </select>
+          <input
+            class="form-profile__input"
+            type="text"
+            value="(902) 887 9777"
+          />
+        </div>
+      </div>
+    </form>
+  </div>
+
+  <div class="profile-box">
+    <h2 class="profile-box__title">Адрес</h2>
+
+    <form class="form-profile">
+      <div class="form-profile__group">
+        <label class="form-profile__label">Область</label>
+        <select class="form-profile__select select">
+          <option value="1">Московская обл.</option>
+          <option value="2">Московская обл.</option>
+          <option value="3">Московская обл.</option>
+        </select>
+      </div>
+      <div class="form-profile__group">
+        <label class="form-profile__label">Нас. пункт</label>
+        <select class="form-profile__select select">
+          <option value="1">Москва</option>
+          <option value="2">Москва</option>
+          <option value="3">Москва</option>
+        </select>
+      </div>
+      <div class="form-profile__group">
+        <label class="form-profile__label">Улица, дом</label>
+        <select class="form-profile__select select">
+          <option value="1">Новое шоссе, д 3.1</option>
+          <option value="2">Новое шоссе, д 3.1</option>
+          <option value="3">Новое шоссе, д 3.1</option>
+        </select>
+      </div>
+      <div class="form-profile__group">
+        <label class="form-profile__label">Индекс</label>
+        <input class="form-profile__input" type="text" value="123-567" />
+      </div>
+    </form>
+  </div>
+
+  <div class="profile-box">
+    <h2 class="profile-box__title">Сменить пароль</h2>
+
+    <form class="form-profile">
+      <div class="form-profile__group">
+        <label class="form-profile__label">Область</label>
+        <input
+          class="form-profile__input"
+          type="text"
+          value="+7 (902) 888 77 66"
+        />
+      </div>
+      <div class="form-profile__group">
+        <label class="form-profile__label">Cтарый пароль</label>
+        <input class="form-profile__input" type="text" />
+      </div>
+      <div class="form-profile__group">
+        <label class="form-profile__label">Новый пароль</label>
+        <input class="form-profile__input" type="text" />
+      </div>
+
+      <button class="form-profile__btn btn">ИЗМЕНИТЬ ПАРОЛЬ</button>
+    </form>
   </div>
 </section>

@@ -12,7 +12,8 @@
 Карточка продукта: https://vsulimovvv.github.io/sol/app/product.html  
 Каталог: https://vsulimovvv.github.io/sol/app/catalog.html  
 Подарочная карта: https://vsulimovvv.github.io/sol/app/gift-card.html
-  
+
 Личный кабинет  
 Войти: https://vsulimovvv.github.io/sol/app/login.html  
 Регистрация: https://vsulimovvv.github.io/sol/app/registration.html  
+Мои данные: https://vsulimovvv.github.io/sol/app/profile.html  

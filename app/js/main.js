@@ -279,6 +279,7 @@ window.addEventListener('DOMContentLoaded', () => {
     }
     bindModal('.btn-sizes', '.popup--sizes', '.popup__close');
     bindModal('.btn-reset-pas', '.popup--reset-pas', '.popup__close');
+    bindModal('.btn-log-out', '.popup--log-out', '.popup__close');
   })();
 
   // * ===== Toggle Tabs
@@ -326,6 +327,12 @@ window.addEventListener('DOMContentLoaded', () => {
     '.product-tabs',
     '.product-tabs__top-btn',
     '.product-tabs__content',
+    'active'
+  );
+  someTabs(
+    '.types-tabs',
+    '.types-tabs__btn',
+    '.types-tabs__content',
     'active'
   );
 });

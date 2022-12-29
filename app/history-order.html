@@ -170,9 +170,96 @@
   </div>
 </div>
 
+<div class="popup popup--reset-pas">
+  <div class="popup__container">
+    <button class="popup__close" type="button" aria-label="Закрыть">
+      <svg width="15" height="15">
+        <use xlink:href="img/sprite.svg#close"></use>
+      </svg>
+    </button>
+    <div class="popup__wrapper">
+      <div class="popup__top">
+        <span class="popup__title"> Восстановление пароля </span>
+        <p class="popup__text">
+          На указанный вами номер телефона будет отправлен код для
+          восстановления пароля.
+        </p>
+      </div>
+
+      <form class="popup__form popup-form">
+        <label class="popup-form__group">
+          <input
+            class="popup-form__input"
+            type="tel"
+            placeholder="+7 000 000 00 00"
+          />
+        </label>
+
+        <button class="popup-form__btn btn" type="button">ВОССТАНОВИТЬ</button>
+      </form>
+    </div>
+  </div>
+</div>
+
+<div class="popup popup--new-pas">
+  <div class="popup__container">
+    <button class="popup__close" type="button" aria-label="Закрыть">
+      <svg width="15" height="15">
+        <use xlink:href="img/sprite.svg#close"></use>
+      </svg>
+    </button>
+    <div class="popup__wrapper">
+      <div class="popup__top">
+        <span class="popup__title"> Создайте новый пароль </span>
+      </div>
+
+      <form class="popup__form popup-form">
+        <label class="popup-form__group">
+          <input
+            class="popup-form__input"
+            type="password"
+            placeholder="Новый пароль"
+          />
+        </label>
+        <label class="popup-form__group">
+          <input
+            class="popup-form__input"
+            type="password"
+            placeholder="Подтвердите пароль"
+          />
+        </label>
+
+        <button class="popup-form__btn btn" type="button">
+          ПОДТВЕРДИТЬ ПАРОЛЬ
+        </button>
+      </form>
+    </div>
+  </div>
+</div>
+
+<div class="popup popup--log-out">
+  <div class="popup__container">
+    <button class="popup__close" type="button" aria-label="Закрыть">
+      <svg width="15" height="15">
+        <use xlink:href="img/sprite.svg#close"></use>
+      </svg>
+    </button>
+    <div class="popup__wrapper">
+      <div class="popup__top">
+        <span class="popup__title">Вы уверены, что хотите выйти?</span>
+      </div>
+
+      <div class="popup__btns">
+        <button class="popup__btn btn" type="button">Выйти</button>
+        <button class="popup__btn btn popup__btn--cancel">Отменить</button>
+      </div>
+    </div>
+  </div>
+</div>
+
 
     <div class="site-wrapper">
-      <header class="header header--dark">
+      <header class="header header--relative">
   <!-- Mobile Menu -->
   <div class="overlay"></div>
 
@@ -568,9 +655,7 @@
             <a class="menu__link" data-target="link-shop" href="#">МАГАЗИН</a>
           </li>
           <li class="menu__item">
-            <a class="menu__link" href="#" data-target="link-customer"
-              >ПОКУПАТЕЛЯМ</a
-            >
+            <a class="menu__link" href="#" data-target="link-customer">ПОКУПАТЕЛЯМ</a>
           </li>
           <li class="menu__item">
             <a class="menu__link" href="#">О БРЕНДЕ</a>
@@ -582,7 +667,7 @@
       </nav>
 
       <a class="header__logo logo" href="index.html">
-        <img src="img/logo-white.svg" alt="logo" />
+        <img src="img/logo.svg" alt="logo" />
       </a>
 
       <div class="header-tools">
@@ -686,191 +771,241 @@
 
 
       <main class="main mt">
-        <section class="about-brand">
-  <div class="container">
-    <div class="about-brand__wrapper">
-      <h2 class="about-brand__title">
-        Synthesis of the <br />
-        <span class="block">outer</span> world <br />through <br />
-        the <span>inner</span> world
-      </h2>
+        <div class="container">
+          <div class="grid">
+            <div class="grid__left">
+              <div class="profile-menu">
+                <ul class="profile-menu__list">
+                  <li class="profile-menu__item">
+                    <a class="profile-menu__link" href="#">МОИ ДАННЫЕ</a>
+                  </li>
+                  <li class="profile-menu__item">
+                    <a class="profile-menu__link active" href="#">
+                      ИСТОРИЯ ЗАКАЗОВ
+                    </a>
+                  </li>
+                  <li class="profile-menu__item">
+                    <a class="profile-menu__link" href="#">БОНУСЫ</a>
+                  </li>
+                  <li class="profile-menu__item">
+                    <a class="profile-menu__link" href="#">ОБМЕН И ВОЗВРАТ</a>
+                  </li>
+                </ul>
 
-      <div class="about-brand__img about-brand__img--left">
-        <picture>
-          <source srcset="img/about-brand/1.webp" type="image/webp" />
-          <img src="img/about-brand/1.jpg" alt="img" />
-        </picture>
-      </div>
-      <div class="about-brand__img about-brand__img--right">
-        <picture>
-          <source srcset="img/about-brand/2.webp" type="image/webp" />
-          <img src="img/about-brand/2.jpg" alt="img" />
-        </picture>
-      </div>
+                <button class="profile-menu__log-out btn-log-out" type="button">
+                  Выйти
+                </button>
+
+                <div class="profile-menu__bottom">
+                  <p class="profile-menu__text">
+                    Нужна помощь? <br />Свяжитесь с нами!
+                  </p>
+
+                  <div class="profile-menu__links">
+                    <a class="profile-menu__phone" href="tel:+1234567890">
+                      +1 234 56 78 90
+                    </a>
+                    <a class="profile-menu__mail" href="mailto:hi@solbrand.com">
+                      hi@solbrand.com
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="grid__right">
+              <section class="history-order">
+  <h2 class="history-order__title">История заказов</h2>
+  <div class="order-box">
+    <div class="order-box__top">
+      <span class="order-box__number">Заказ 1234-5678</span>
+      <span class="order-box__date">5 апреля</span>
     </div>
-  </div>
-</section>
-
-        <section class="about">
-  <div class="container">
-    <div class="section-top">
-      <span class="section-top__text">о нас</span>
-      <h2 class="section-top__title">знакомство с sol</h2>
-    </div>
-
-    <p class="about__text">
-      Бренд SOL родился в 2013 году, за эти почти 10 лет случилось много
-      преобразований и возрождений бренда, но неизменными оставались
-      художественный подход, спонтанность, нонконформизм, жажда развития, поиск
-      новых форм, смыслов и визуальной подачи.
-    </p>
-
-    <div class="about__wrapper">
-      <div class="about__left">
-        <picture>
-          <source srcset="img/about/1.webp" type="image/webp" />
-          <img src="img/about/1.png" alt="about" />
-        </picture>
-      </div>
-      <div class="about__middle">
-        <picture>
-          <source srcset="img/about/2.webp" type="image/webp" />
-          <img class="about__founder-img" src="img/about/2.png" alt="about" />
-        </picture>
-        <h3 class="about__name">Olga Selivanova</h3>
-        <span class="about__prof">создатель и дизайнер бренда SOL</span>
-      </div>
-      <div class="about__right">
-        <picture>
-          <source srcset="img/about/3.webp" type="image/webp" />
-          <img src="img/about/3.png" alt="about" />
-        </picture>
-      </div>
-    </div>
-  </div>
-</section>
-
-        <section class="history">
-  <div class="container">
-    <div class="section-top">
-      <span class="section-top__text">история бренда</span>
-      <h2 class="section-top__title">
-        sol когда-то начался <br />
-        с чепчика <span></span> и косынки
-      </h2>
-    </div>
-
-    <div class="history__wrapper">
-      <div class="history__text">
-        <p>
-          Будучи начинающим фотографом, Ольга экспериментировала с реквизитами
-          для fashion-съемок, и вместе со вскоре ставшей первой портной SOL
-          изготовила экспериментальные изделия из лоскутов кожи и ткани,
-          привезенных с Бали.
-        </p>
-        <p>
-          Постепенно увеличиваясь и переехав из небольшого шоурума-мастерской на
-          мансарде здания старинного банка в помещение побольше, SOL вырос до
-          собственного швейного цеха и просторного шоурума на Пресне.
-        </p>
-      </div>
-
-      <div class="history__img">
-        <picture>
-          <source srcset="img/history-img.webp" type="image/webp" />
-          <img src="img/history-img.png" alt="img" />
-        </picture>
-      </div>
-    </div>
-  </div>
-</section>
-
-        <section class="values">
-  <div class="container">
-    <div class="values__top section-top">
-      <span class="section-top__text">НАШИ ЦЕННОСТИ</span>
-      <h2 class="section-top__title">
-        «Лучше одна качественная, дорогая вещь, чем несколько дешёвых и
-        второсортных»
-      </h2>
-    </div>
-
-    <p class="values__text">
-      Качество пошива и материалов мы ставим во главу угла, потому иной раз
-      неочевидно, где в наших изделиях изнанка, а где лицо. Мы создаём коллекции
-      со смыслом, небольшим тиражом, вовлекая в процесс много кропотливой ручной
-      работы, в которую каждый член команды SOL вкладывает любовь и заботу о
-      вас.
-    </p>
-
-    <div class="values__slider swiper">
-      <ul class="values__slides swiper-wrapper">
-        <li class="values__slide swiper-slide">
-          <div class="values__imgs">
-            <div class="values__img">
+    <div class="order-box__inner">
+      <ul class="order-box__list">
+        <li class="order-box__item">
+          <article class="order-card">
+            <div class="order-card__left">
               <picture>
-                <source srcset="img/values/1.webp" type="image/webp" />
-                <img src="img/values/1.jpg" alt="img" />
+                <source srcset="img/order.webp" type="image/webp" />
+                <img src="img/order.png" alt="order" />
               </picture>
             </div>
-            <div class="values__img values__img--small">
-              <picture>
-                <source srcset="img/values/2.webp" type="image/webp" />
-                <img src="img/values/2.jpg" alt="img" />
-              </picture>
+            <div class="order-card__right">
+              <div class="order-card__top">
+                <h3 class="order-card__title">
+                  Накидка из плиссированной сетчатой ткани
+                </h3>
+                <span class="order-card__price">15 000 ₽</span>
+              </div>
+
+              <div class="order-card__details">
+                <span class="order-card__color">
+                  <div class="order-card__circle"></div>
+                  <span>Молочный</span>
+                </span>
+                <span class="order-card__size">XS</span>
+              </div>
+
+              <span class="order-card__count">x1</span>
             </div>
-          </div>
+          </article>
         </li>
-        <li class="values__slide swiper-slide">
-          <div class="values__imgs">
-            <div class="values__img">
+        <li class="order-box__item">
+          <article class="order-card">
+            <div class="order-card__left">
               <picture>
-                <source srcset="img/values/1.webp" type="image/webp" />
-                <img src="img/values/1.jpg" alt="img" />
+                <source srcset="img/order.webp" type="image/webp" />
+                <img src="img/order.png" alt="order" />
               </picture>
             </div>
-            <div class="values__img values__img--small">
-              <picture>
-                <source srcset="img/values/2.webp" type="image/webp" />
-                <img src="img/values/2.jpg" alt="img" />
-              </picture>
+            <div class="order-card__right">
+              <div class="order-card__top">
+                <h3 class="order-card__title">
+                  Накидка из плиссированной сетчатой ткани
+                </h3>
+                <span class="order-card__price">15 000 ₽</span>
+              </div>
+
+              <div class="order-card__details">
+                <span class="order-card__color">
+                  <div class="order-card__circle"></div>
+                  <span>Молочный</span>
+                </span>
+                <span class="order-card__size">XS</span>
+              </div>
+
+              <span class="order-card__count">x1</span>
             </div>
-          </div>
-        </li>
-        <li class="values__slide swiper-slide">
-          <div class="values__imgs">
-            <div class="values__img">
-              <picture>
-                <source srcset="img/values/1.webp" type="image/webp" />
-                <img src="img/values/1.jpg" alt="img" />
-              </picture>
-            </div>
-            <div class="values__img values__img--small">
-              <picture>
-                <source srcset="img/values/2.webp" type="image/webp" />
-                <img src="img/values/2.jpg" alt="img" />
-              </picture>
-            </div>
-          </div>
+          </article>
         </li>
       </ul>
+      <div class="order-box__right">
+        <div class="order-payment">
+          <span class="order-payment__name">Способ оплаты</span>
+          <div class="order-payment__inner">
+            <span class="order-payment__text">Картой онлайн</span>
+            <span class="order-payment__text">7 500 ₽, оплачено</span>
+          </div>
+        </div>
+        <div class="order-receiving">
+          <span class="order-payment__name">Способ оплаты</span>
+          <div class="order-receiving__inner">
+            <span class="order-payment__text">Доставка курьером</span>
+            <span class="order-payment__text">0 ₽, оплачено</span>
+          </div>
+          <span>в четверг, 17 декабря с 09:00 до 18:00</span>
+        </div>
+        <div class="order-data">
+          <span class="order-data__name">данные покупателя</span>
+          <p>Нестерова Виктория</p>
+          <p>+7 902 887 97 78</p>
+          <p>Москва, ул. Новое шоссе, д.3к2,17</p>
+        </div>
 
-      <div class="swiper-pagination"></div>
+        <button class="order-box__btn btn" type="button">
+          ОТСЛЕДИТЬ ЗАКАЗ
+        </button>
+      </div>
+    </div>
+  </div>
+  <div class="order-box">
+    <div class="order-box__top">
+      <span class="order-box__number">Заказ 1234-5678</span>
+      <span class="order-box__date">5 апреля</span>
+    </div>
+    <div class="order-box__inner">
+      <ul class="order-box__list">
+        <li class="order-box__item">
+          <article class="order-card">
+            <div class="order-card__left">
+              <picture>
+                <source srcset="img/order.webp" type="image/webp" />
+                <img src="img/order.png" alt="order" />
+              </picture>
+            </div>
+            <div class="order-card__right">
+              <div class="order-card__top">
+                <h3 class="order-card__title">
+                  Накидка из плиссированной сетчатой ткани
+                </h3>
+                <span class="order-card__price">15 000 ₽</span>
+              </div>
 
-      <button
-        class="swiper-button-next"
-        type="button"
-        aria-label="Следующий"
-      ></button>
-      <button
-        class="swiper-button-prev"
-        type="button"
-        aria-label="Следующий"
-      ></button>
+              <div class="order-card__details">
+                <span class="order-card__color">
+                  <div class="order-card__circle"></div>
+                  <span>Молочный</span>
+                </span>
+                <span class="order-card__size">XS</span>
+              </div>
+
+              <span class="order-card__count">x1</span>
+            </div>
+          </article>
+        </li>
+        <li class="order-box__item">
+          <article class="order-card">
+            <div class="order-card__left">
+              <picture>
+                <source srcset="img/order.webp" type="image/webp" />
+                <img src="img/order.png" alt="order" />
+              </picture>
+            </div>
+            <div class="order-card__right">
+              <div class="order-card__top">
+                <h3 class="order-card__title">
+                  Накидка из плиссированной сетчатой ткани
+                </h3>
+                <span class="order-card__price">15 000 ₽</span>
+              </div>
+
+              <div class="order-card__details">
+                <span class="order-card__color">
+                  <div class="order-card__circle"></div>
+                  <span>Молочный</span>
+                </span>
+                <span class="order-card__size">XS</span>
+              </div>
+
+              <span class="order-card__count">x1</span>
+            </div>
+          </article>
+        </li>
+      </ul>
+      <div class="order-box__right">
+        <div class="order-payment">
+          <span class="order-payment__name">Способ оплаты</span>
+          <div class="order-payment__inner">
+            <span class="order-payment__text">Картой онлайн</span>
+            <span class="order-payment__text">7 500 ₽, оплачено</span>
+          </div>
+        </div>
+        <div class="order-receiving">
+          <span class="order-payment__name">Способ оплаты</span>
+          <div class="order-receiving__inner">
+            <span class="order-payment__text">Доставка курьером</span>
+            <span class="order-payment__text">0 ₽, оплачено</span>
+          </div>
+          <span>в четверг, 17 декабря с 09:00 до 18:00</span>
+        </div>
+        <div class="order-data">
+          <span class="order-data__name">данные покупателя</span>
+          <p>Нестерова Виктория</p>
+          <p>+7 902 887 97 78</p>
+          <p>Москва, ул. Новое шоссе, д.3к2,17</p>
+        </div>
+
+        <button class="order-box__btn btn" type="button">
+          ОТСЛЕДИТЬ ЗАКАЗ
+        </button>
+      </div>
     </div>
   </div>
 </section>
 
+            </div>
+          </div>
+        </div>
       </main>
       <footer class="footer">
   <div class="container">
