@@ -1,0 +1,183 @@
+<section class="profile">
+  <div class="profile-box">
+    <h2 class="profile-box__title">Персональная информация</h2>
+
+    <form class="form-profile">
+      <div class="form-profile__group">
+        <label class="form-profile__label">Фамилия</label>
+        <input class="form-profile__input" type="text" value="Нестерова" />
+      </div>
+      <div class="form-profile__group">
+        <label class="form-profile__label">Имя</label>
+        <input class="form-profile__input" type="text" value="Анастасия" />
+      </div>
+      <div class="form-profile__group">
+        <label class="form-profile__label">Отчество</label>
+        <input class="form-profile__input" type="text" value="Ивановна" />
+      </div>
+      <div class="form-profile__group">
+        <label class="form-profile__label">Email</label>
+        <input
+          class="form-profile__input"
+          type="text"
+          value="example@site.com"
+        />
+      </div>
+      <div class="form-profile__group">
+        <label class="form-profile__label">Телефон</label>
+        <div class="form-profile__phone">
+          <select class="form-profile__select select">
+            <option value="1">+7</option>
+            <option value="2">+7</option>
+            <option value="3">+7</option>
+          </select>
+          <input
+            class="form-profile__input"
+            type="text"
+            value="(902) 887 9777"
+          />
+        </div>
+      </div>
+      <div class="form-profile__group">
+        <label class="form-profile__label">Дата рождения</label>
+        <div class="form-profile__dob">
+          <select class="form-profile__select select">
+            <option value="1">19</option>
+            <option value="2">19</option>
+            <option value="3">19</option>
+          </select>
+          <select class="form-profile__select select">
+            <option value="1">марта</option>
+            <option value="2">марта</option>
+            <option value="3">марта</option>
+          </select>
+          <select class="form-profile__select select">
+            <option value="1">1997</option>
+            <option value="2">1997</option>
+            <option value="3">1997</option>
+          </select>
+        </div>
+      </div>
+      <div class="form-profile__group">
+        <label class="form-profile__label">Нас. пункт</label>
+        <select class="form-profile__select select">
+          <option value="1">Москва</option>
+          <option value="2">Москва</option>
+          <option value="3">Москва</option>
+        </select>
+      </div>
+      <div class="form-profile__group">
+        <label class="form-profile__label">Номер заказа</label>
+        <input class="form-profile__input" type="text" value="123-456-789" />
+      </div>
+      <div class="form-profile__group">
+        <label class="form-profile__label">Причина возврата</label>
+        <input
+          class="form-profile__input"
+          type="text"
+          value="Опишите ситцацию"
+        />
+      </div>
+      <div class="form-profile__group">
+        <label class="form-profile__label">Индекс</label>
+        <input class="form-profile__input" type="text" value="123-567" />
+      </div>
+      <div class="form-profile__group">
+        <span class="form-profile__label">Способ возврата</span>
+        <label class="radio">
+          <input class="radio__input" type="radio" name="return" checked />
+          <span class="radio__box"></span>
+          <span class="radio__text">Пункт самовывоза СДЭК</span>
+        </label>
+      </div>
+      <div class="form-profile__group">
+        <label class="form-profile__label">Адрес пункта</label>
+        <input
+          class="form-profile__input"
+          type="text"
+          value="Москва, ул. Пушкина, д 123, кв 78"
+        />
+      </div>
+
+      <div class="form-profile__bottom">
+        <div class="form-box">
+          <div class="form-box__top">
+            <span class="form-box__name">Прикрепите файл заявления</span>
+            <a class="form-box__download" href="#" download="">
+              Cкачать шаблон заявления
+            </a>
+          </div>
+          <div class="form-box__field">
+            <label
+              class="custom-file-upload custom-file-upload--copy-inn"
+              for="copy-inn"
+            >
+              <b
+                >Загрузить файл
+                <svg
+                  width="13"
+                  height="14"
+                  viewBox="0 0 13 14"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M11.0962 2.4038C9.8685 1.1761 8.2362 0.5 6.5 0.5C4.7638 0.5 3.1315 1.1761 1.9038 2.4038C0.6761 3.6315 0 5.2638 0 7C0 8.7362 0.6761 10.3685 1.9038 11.5962C3.1315 12.8239 4.76378 13.5 6.5 13.5C8.23622 13.5 9.8685 12.8239 11.0962 11.5962C12.3239 10.3685 13 8.73622 13 7C13 5.26378 12.3239 3.6315 11.0962 2.4038ZM9.37278 6.41428C9.30801 6.57064 9.15544 6.67261 8.98619 6.67261H7.91293V10.2321C7.91293 10.4632 7.72558 10.6505 7.49448 10.6505H5.50552C5.27442 10.6505 5.08707 10.4632 5.08707 10.2321V6.67261H4.01378C3.84453 6.67261 3.69196 6.57067 3.62719 6.41428C3.56244 6.25793 3.59823 6.07794 3.71791 5.95826L6.2041 3.47204C6.28257 3.39357 6.389 3.34946 6.49997 3.34946C6.61094 3.34946 6.7174 3.39354 6.79584 3.47204L9.28204 5.95826C9.40174 6.07794 9.43756 6.2579 9.37278 6.41428Z"
+                    fill="white"
+                  />
+                </svg>
+              </b>
+
+              <span>Файл не выбран</span>
+            </label>
+            <input
+              class="input-file-upload"
+              id="copy-inn"
+              type="file"
+              name="copy-inn"
+              multiple
+            />
+          </div>
+        </div>
+        <div class="form-box">
+          <div class="form-box__top">
+            <span class="form-box__name">Прикрепите фото товара\-ов</span>
+          </div>
+          <div class="form-box__field">
+            <label
+              class="custom-file-upload custom-file-upload--copy-inn"
+              for="copy-inn"
+            >
+              <b
+                >Загрузить файл
+                <svg
+                  width="13"
+                  height="14"
+                  viewBox="0 0 13 14"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M11.0962 2.4038C9.8685 1.1761 8.2362 0.5 6.5 0.5C4.7638 0.5 3.1315 1.1761 1.9038 2.4038C0.6761 3.6315 0 5.2638 0 7C0 8.7362 0.6761 10.3685 1.9038 11.5962C3.1315 12.8239 4.76378 13.5 6.5 13.5C8.23622 13.5 9.8685 12.8239 11.0962 11.5962C12.3239 10.3685 13 8.73622 13 7C13 5.26378 12.3239 3.6315 11.0962 2.4038ZM9.37278 6.41428C9.30801 6.57064 9.15544 6.67261 8.98619 6.67261H7.91293V10.2321C7.91293 10.4632 7.72558 10.6505 7.49448 10.6505H5.50552C5.27442 10.6505 5.08707 10.4632 5.08707 10.2321V6.67261H4.01378C3.84453 6.67261 3.69196 6.57067 3.62719 6.41428C3.56244 6.25793 3.59823 6.07794 3.71791 5.95826L6.2041 3.47204C6.28257 3.39357 6.389 3.34946 6.49997 3.34946C6.61094 3.34946 6.7174 3.39354 6.79584 3.47204L9.28204 5.95826C9.40174 6.07794 9.43756 6.2579 9.37278 6.41428Z"
+                    fill="white"
+                  />
+                </svg>
+              </b>
+
+              <span>Файл не выбран</span>
+            </label>
+            <input
+              class="input-file-upload"
+              id="copy-inn"
+              type="file"
+              name="copy-inn"
+              multiple
+            />
+          </div>
+        </div>
+      </div>
+
+      <button class="form-profile__submit btn" type="submit">ОТПРАВИТЬ</button>
+    </form>
+  </div>
+</section>

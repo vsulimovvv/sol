@@ -5,6 +5,44 @@ window.addEventListener('DOMContentLoaded', () => {
   // * ===== Nice Select
   $('select').niceSelect();
 
+  (function loadForm() {
+    let inputs = document.querySelectorAll('.input-file-upload');
+    Array.prototype.forEach.call(inputs, function (input) {
+      let label = input.previousElementSibling,
+        labelVal = label.querySelector('.custom-file-upload span').innerText;
+
+      input.addEventListener('change', function (e) {
+        let countFiles = '';
+        if (this.files && this.files.length >= 1)
+          countFiles = this.files.length;
+
+        if (countFiles)
+          label.querySelector('.custom-file-upload span').innerText =
+            'Выбрано файлов: ' + countFiles;
+        else
+          label.querySelector('.custom-file-upload span').innerText = labelVal;
+      });
+    });
+  })();
+
+  // * ==== Dropdown
+  document.addEventListener('click', (e) => {
+    const isDropdownButton = e.target.matches('[data-dropdown-button]');
+    if (!isDropdownButton && e.target.closest('[data-dropdown]') != null)
+      return;
+
+    let currentDropdown;
+    if (isDropdownButton) {
+      currentDropdown = e.target.closest('[data-dropdown]');
+      currentDropdown.classList.toggle('active');
+    }
+
+    document.querySelectorAll('[data-dropdown].active').forEach((dropdown) => {
+      if (dropdown === currentDropdown) return;
+      dropdown.classList.remove('active');
+    });
+  });
+
   (function closeNote() {
     const closeBtn = document.querySelector('.site-note__close');
     const content = document.querySelector('.site-note');
@@ -329,10 +367,5 @@ window.addEventListener('DOMContentLoaded', () => {
     '.product-tabs__content',
     'active'
   );
-  someTabs(
-    '.types-tabs',
-    '.types-tabs__btn',
-    '.types-tabs__content',
-    'active'
-  );
+  someTabs('.types-tabs', '.types-tabs__btn', '.types-tabs__content', 'active');
 });

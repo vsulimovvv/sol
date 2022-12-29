@@ -774,12 +774,13 @@
         <div class="container">
           <div class="grid">
             <h1 class="grid__title">Привет, Виктория!</h1>
-            <div class="grid__wrapper"> <select class="grid__select select">
-              <option value="1">МОИ ДАННЫЕ</option>
-              <option value="1">ИСТОРИЯ ЗАКАЗОВ</option>
-              <option value="1">БОНУСЫ</option>
-              <option value="1">ОБМЕН И ВОЗВРАТ</option>
-            </select>
+            <div class="grid__wrapper">
+              <select class="grid__select select">
+                <option value="1">МОИ ДАННЫЕ</option>
+                <option value="1">ИСТОРИЯ ЗАКАЗОВ</option>
+                <option value="1">БОНУСЫ</option>
+                <option value="1">ОБМЕН И ВОЗВРАТ</option>
+              </select>
               <div class="grid__left">
                 <div class="profile-menu">
                   <ul class="profile-menu__list">
@@ -794,12 +795,10 @@
                       </a>
                     </li>
                     <li class="profile-menu__item">
-                      <a class="profile-menu__link active">БОНУСЫ</a>
+                      <a class="profile-menu__link" href="bonus.html">БОНУСЫ</a>
                     </li>
                     <li class="profile-menu__item">
-                      <a class="profile-menu__link" href="return.html">
-                        ОБМЕН И ВОЗВРАТ
-                      </a>
+                      <a class="profile-menu__link active"> ОБМЕН И ВОЗВРАТ </a>
                     </li>
                   </ul>
 
@@ -830,309 +829,191 @@
                 </div>
               </div>
               <div class="grid__right">
-                <section class="bonus">
-  <div class="bonus-box">
-    <h2 class="bonus-box__title">Бонусный счет</h2>
-    <div class="bonus-box__inner">
-      <div class="bonus-box__left">
-        <div class="bonus-box__card">
-          <svg
-            width="32"
-            height="14"
-            viewBox="0 0 32 14"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <g clip-path="url(#clip0_952_21256)">
-              <path
-                d="M21.8019 10.0857C21.7419 10.2503 21.6742 10.4118 21.5988 10.5698C21.5009 10.7666 21.3957 10.9556 21.2828 11.1368C21.2526 11.1824 21.2302 11.2202 21.2 11.258C21.17 11.2958 21.1474 11.3413 21.1172 11.3788C20.7486 11.8781 20.305 12.2792 19.7783 12.5816C19.0486 13.005 18.1984 13.2397 17.2357 13.2622H17.1003L16.3854 10.086H21.8019V10.0857ZM22.2384 7.37069C22.2384 8.29337 22.1182 9.11762 21.8849 9.8437H20.7941C20.5684 9.23864 20.3503 8.64145 20.1246 8.03612L19.1993 7.3783C19.2821 7.0528 19.3725 6.72021 19.455 6.39497C20.3352 6.17579 21.2153 5.96395 22.1031 5.7445C22.1182 5.80487 22.1257 5.86551 22.133 5.92615C22.1408 5.97156 22.1481 6.00936 22.1481 6.0469C22.1859 6.35717 22.2158 6.64461 22.2309 6.89425V6.96224C22.2387 7.09086 22.2387 7.23445 22.2387 7.37069H22.2384ZM14.3772 2.94625C14.3679 3.57571 14.3051 4.2032 14.1893 4.82181C14.144 5.08667 14.0838 5.35127 14.0237 5.62349C14.0086 5.67651 14.0011 5.72954 13.9862 5.7823C13.9711 5.83532 13.9636 5.88074 13.9485 5.93376C13.9334 6.00175 13.911 6.07735 13.8883 6.14534C13.8357 6.33434 13.7829 6.51599 13.7228 6.69764C13.0294 6.94052 12.3348 7.18001 11.6391 7.4161C11.7294 6.92444 11.8122 6.43277 11.9023 5.93376C11.9174 5.82771 11.94 5.72192 11.9624 5.60826C11.9702 5.57072 11.9775 5.52531 11.9851 5.48751C12.0905 5.01107 12.241 4.56482 12.4365 4.16399C12.8202 3.36992 13.3541 2.74963 14.0313 2.29577C14.1063 2.2435 14.1841 2.19556 14.2645 2.15218L14.3546 2.10677V2.14457C14.3624 2.1976 14.3624 2.25036 14.3624 2.30338C14.3772 2.52283 14.3772 2.73441 14.3772 2.94625ZM13.2786 7.9075C12.9704 8.62622 12.6169 9.27644 12.2108 9.8437C12.1957 9.85947 12.183 9.87733 12.173 9.89672L12.128 9.96497C12.0978 10.0025 12.0678 10.0479 12.0376 10.0857C11.9473 10.2067 11.857 10.3201 11.7591 10.4262C11.7367 10.4488 11.7141 10.4713 11.6992 10.5018C11.6841 10.5167 11.669 10.5396 11.6464 10.5545C11.6089 10.5926 11.5711 10.6378 11.5336 10.6756C11.4433 10.774 11.353 10.8646 11.2629 10.9554C11.2176 11.0008 11.165 11.0462 11.1124 11.0916C11.0666 11.1366 11.0188 11.1795 10.9692 11.2202C11.1424 10.2595 11.3155 9.30662 11.4811 8.3464C12.0751 8.20255 12.677 8.05896 13.2789 7.9075H13.2786ZM16.8519 13.2698H16.8066C15.8439 13.2397 15.0012 13.0126 14.264 12.5892C13.4741 12.1353 12.8723 11.4623 12.4435 10.5774C12.3814 10.4458 12.3237 10.3121 12.2706 10.1765C12.293 10.1464 12.3157 10.1235 12.3305 10.0933C12.3607 10.0555 12.3909 10.0101 12.4211 9.97232C12.451 9.93452 12.481 9.88911 12.5036 9.85131C12.9098 9.26147 13.2635 8.58816 13.572 7.83951L15.5279 7.35546C15.9642 9.32946 16.4078 11.2956 16.8519 13.2696V13.2698ZM11.7143 13.2698H8.38208V12.8766C9.18012 12.6644 9.93243 12.3054 10.6011 11.8177C10.6462 11.7799 10.6988 11.7494 10.7441 11.7119C10.7891 11.6738 10.8417 11.636 10.887 11.5982C10.932 11.5604 10.9846 11.5226 11.0299 11.4775C11.0749 11.4318 11.1275 11.394 11.1728 11.3489C11.3006 11.2352 11.4209 11.1218 11.5415 11.0008L11.7143 13.2698V13.2698ZM17.1758 4.41336C16.6808 4.1645 16.2644 3.78144 15.9733 3.30719C15.6822 2.83293 15.5279 2.28625 15.5279 1.72851V1.65291C15.7346 1.6008 15.947 1.5754 16.16 1.57731C16.2875 1.57731 16.4081 1.58492 16.5286 1.6075C16.3882 1.9159 16.3162 2.25148 16.3177 2.59082C16.3177 2.93975 16.3946 3.28433 16.543 3.59956C16.6913 3.91479 16.9074 4.19278 17.1755 4.41336H17.1758ZM15.2572 6.16791C14.8435 6.31176 14.4223 6.45561 14.0083 6.5992L14.1213 6.21332C14.1289 6.19075 14.1289 6.17579 14.1364 6.15295C14.1513 6.10754 14.1588 6.06212 14.1739 6.01697C14.189 5.97156 14.1966 5.91854 14.2117 5.87312C14.2567 5.7067 14.2942 5.54027 14.3319 5.37385C14.484 4.68491 14.5772 3.98409 14.6105 3.2791L15.2572 6.16791ZM21.1927 3.02946C21.125 3.41533 21.0646 3.79334 20.9969 4.17921C20.3799 4.39079 19.763 4.61024 19.1389 4.82181C19.4472 4.24694 19.7481 3.67206 20.0566 3.10506C20.4355 3.08388 20.8141 3.05867 21.1924 3.02946H21.1927Z"
-                fill="black"
-              />
-              <path
-                d="M22.0502 5.50246L11.2629 8.15712C11.1725 8.67162 11.0822 9.17824 10.9921 9.69248L10.4202 8.99686C10.6159 8.63356 10.819 8.26291 11.0145 7.90013C14.55 6.67478 18.0859 5.44969 21.6214 4.23196C21.8021 4.60996 21.945 5.03363 22.0502 5.50246V5.50246ZM18.7403 4.17158V4.26976C18.7403 4.36819 18.7328 4.45876 18.7179 4.54958C18.7101 4.60996 18.7028 4.66298 18.6877 4.72362H18.65C17.4915 4.70078 16.5588 3.75552 16.5588 2.58319C16.5588 2.25034 16.6343 1.93272 16.7696 1.65289C17.8979 1.93272 18.7403 2.95384 18.7403 4.17158V4.17158Z"
-                fill="black"
-              />
-              <path
-                d="M20.395 1.963L18.928 4.70822C18.9582 4.53419 18.9809 4.36041 18.9809 4.17141C18.9809 2.91587 18.1684 1.84934 17.0474 1.47895C16.9948 1.46372 16.9498 1.4485 16.8969 1.43354C16.8594 1.42566 16.8141 1.4107 16.7766 1.40309C16.7316 1.39574 16.6939 1.38812 16.6488 1.38051C16.4876 1.35007 16.3239 1.33486 16.1599 1.3351C15.949 1.3351 15.746 1.35794 15.5429 1.40335C16.0297 1.03718 16.6027 0.805048 17.2054 0.729772C17.2809 0.72216 17.3559 0.71481 17.4387 0.707197C17.5063 0.699585 17.574 0.699585 17.6417 0.699585H17.6795C18.2811 0.707197 18.8528 0.86601 19.3495 1.14584C19.3568 1.14584 19.3643 1.15345 19.3643 1.15345C19.3643 1.15345 19.5299 1.25162 19.6653 1.35006C19.7783 1.42566 20.0565 1.6375 20.395 1.96274V1.963ZM2.43841 12.778C2.13773 12.6268 1.88964 12.4528 1.68632 12.2485L0.8064 13.1334H0.400024V10.0632H1.0394C1.18805 10.5706 1.41658 11.0506 1.71626 11.4849C2.37099 12.4228 3.21342 12.8919 4.25162 12.8919C4.86079 12.8919 5.34995 12.7103 5.71103 12.3396C6.07211 11.9766 6.26033 11.4849 6.26033 10.8722C6.26395 10.5279 6.15264 10.1923 5.94429 9.91937C5.72685 9.62953 5.46225 9.37897 5.16173 9.17834C4.8535 8.9665 4.41719 8.69429 3.86034 8.36905C3.15328 7.96821 2.58159 7.61279 2.13773 7.28755C1.69194 6.95586 1.31179 6.5428 1.01701 6.06981C0.708516 5.57789 0.550495 5.00327 0.550495 4.33022C0.550495 3.80102 0.700967 3.32459 0.994359 2.90091C1.28775 2.4775 1.73162 2.13704 2.3184 1.87979C2.90519 1.63041 3.62734 1.50179 4.48487 1.50179C5.10914 1.50179 5.72613 1.67582 6.3504 2.03886C6.58366 2.16749 6.8242 2.34126 7.05746 2.5531L7.93764 1.66821H8.33646V4.73867H7.69709C7.55391 4.22444 7.35085 3.75561 7.07256 3.33194C6.82264 2.93241 6.49816 2.58562 6.11714 2.31081C5.74852 2.0386 5.31246 1.90997 4.81575 1.90997C4.39454 1.90997 4.04101 2.0764 3.74007 2.40899C3.43912 2.74184 3.28865 3.16551 3.28865 3.68736C3.28865 4.0882 3.40164 4.44336 3.63489 4.76099C3.87005 5.08436 4.15736 5.36565 4.48487 5.59311C4.8233 5.82752 5.28226 6.11496 5.8615 6.44781C6.53836 6.83369 7.08011 7.1815 7.50158 7.4839C7.92283 7.7852 8.28286 8.16516 8.56217 8.6032C8.84801 9.04945 8.99848 9.56395 8.99848 10.1462C8.99848 10.7284 8.83291 11.2579 8.50177 11.7343C8.17115 12.2107 7.67444 12.5966 7.00487 12.8762C6.34285 13.1565 5.53036 13.2998 4.58276 13.2998C3.8153 13.2922 3.10824 13.1185 2.43867 12.778H2.43841ZM22.8926 13.0426L23.9006 12.7932V2.00815L22.8926 1.75877V1.50914H27.6697V1.75851L26.6617 2.00815V12.8762H30.2649C30.626 12.0065 30.9946 11.1368 31.3557 10.2669H31.8597V13.2998H22.8926V13.0426Z"
-                fill="black"
-              />
-            </g>
-            <defs>
-              <clipPath id="clip0_952_21256">
-                <rect
-                  width="31.5"
-                  height="12.6"
-                  fill="white"
-                  transform="translate(0.400024 0.700012)"
-                />
-              </clipPath>
-            </defs>
-          </svg>
-        </div>
-        <span class="bonus-box__name">ORIGINAL</span>
-      </div>
-      <div class="bonus-box__price">0 ₽</div>
-    </div>
-  </div>
+                <section class="profile">
+  <div class="profile-box">
+    <h2 class="profile-box__title">Персональная информация</h2>
 
-  <div class="bonus-box">
-    <h2 class="bonus-box__title">Правила использования бонусов</h2>
-    <div class="bonus-box__text">
-      <p>
-        1 бонус = 1 рубль. Бонусы начисляются на карту сразу после совершения
-        покупки. Бонусы не аннулируются. Вы можете оплатить бонусами до 100%
-        стоимости чека (в зависимости от статуса).
-      </p>
-    </div>
-  </div>
+    <form class="form-profile">
+      <div class="form-profile__group">
+        <label class="form-profile__label">Фамилия</label>
+        <input class="form-profile__input" type="text" value="Нестерова" />
+      </div>
+      <div class="form-profile__group">
+        <label class="form-profile__label">Имя</label>
+        <input class="form-profile__input" type="text" value="Анастасия" />
+      </div>
+      <div class="form-profile__group">
+        <label class="form-profile__label">Отчество</label>
+        <input class="form-profile__input" type="text" value="Ивановна" />
+      </div>
+      <div class="form-profile__group">
+        <label class="form-profile__label">Email</label>
+        <input
+          class="form-profile__input"
+          type="text"
+          value="example@site.com"
+        />
+      </div>
+      <div class="form-profile__group">
+        <label class="form-profile__label">Телефон</label>
+        <div class="form-profile__phone">
+          <select class="form-profile__select select">
+            <option value="1">+7</option>
+            <option value="2">+7</option>
+            <option value="3">+7</option>
+          </select>
+          <input
+            class="form-profile__input"
+            type="text"
+            value="(902) 887 9777"
+          />
+        </div>
+      </div>
+      <div class="form-profile__group">
+        <label class="form-profile__label">Дата рождения</label>
+        <div class="form-profile__dob">
+          <select class="form-profile__select select">
+            <option value="1">19</option>
+            <option value="2">19</option>
+            <option value="3">19</option>
+          </select>
+          <select class="form-profile__select select">
+            <option value="1">марта</option>
+            <option value="2">марта</option>
+            <option value="3">марта</option>
+          </select>
+          <select class="form-profile__select select">
+            <option value="1">1997</option>
+            <option value="2">1997</option>
+            <option value="3">1997</option>
+          </select>
+        </div>
+      </div>
+      <div class="form-profile__group">
+        <label class="form-profile__label">Нас. пункт</label>
+        <select class="form-profile__select select">
+          <option value="1">Москва</option>
+          <option value="2">Москва</option>
+          <option value="3">Москва</option>
+        </select>
+      </div>
+      <div class="form-profile__group">
+        <label class="form-profile__label">Номер заказа</label>
+        <input class="form-profile__input" type="text" value="123-456-789" />
+      </div>
+      <div class="form-profile__group">
+        <label class="form-profile__label">Причина возврата</label>
+        <input
+          class="form-profile__input"
+          type="text"
+          value="Опишите ситцацию"
+        />
+      </div>
+      <div class="form-profile__group">
+        <label class="form-profile__label">Индекс</label>
+        <input class="form-profile__input" type="text" value="123-567" />
+      </div>
+      <div class="form-profile__group">
+        <span class="form-profile__label">Способ возврата</span>
+        <label class="radio">
+          <input class="radio__input" type="radio" name="return" checked />
+          <span class="radio__box"></span>
+          <span class="radio__text">Пункт самовывоза СДЭК</span>
+        </label>
+      </div>
+      <div class="form-profile__group">
+        <label class="form-profile__label">Адрес пункта</label>
+        <input
+          class="form-profile__input"
+          type="text"
+          value="Москва, ул. Пушкина, д 123, кв 78"
+        />
+      </div>
 
-  <div class="bonus-box">
-    <h2 class="bonus-box__title">Общие условия бонусной программы</h2>
-    <div class="bonus-box__text">
-      <p>
-        Для вступления в Программу лояльности необходимо совершить покупку на
-        сайтеsolconceptstore.ru на любую сумму.
-      </p>
-      <p>
-        На позиции sale и другие акции начисление и списание баллов не
-        производится, если только в условиях Акции не указано иное. Сумма
-        покупок учитывается при подтверждении статуса.
-      </p>
-      <p>
-        Для подтверждения статуса карты ежегодно совершайте покупки на сумму,
-        которая необходима для получения cтатуса (Статус Original с первой
-        покупки на любую сумму, 350 000 ₽ для статуса VIP и 850 000 ₽ для
-        статуса AMBASSADOR). Отслеживайте сумму покупок и состояние карты в
-        личном кабинете.
-      </p>
-    </div>
-  </div>
+      <div class="form-profile__bottom">
+        <div class="form-box">
+          <div class="form-box__top">
+            <span class="form-box__name">Прикрепите файл заявления</span>
+            <a class="form-box__download" href="#" download="">
+              Cкачать шаблон заявления
+            </a>
+          </div>
+          <div class="form-box__field">
+            <label
+              class="custom-file-upload custom-file-upload--copy-inn"
+              for="copy-inn"
+            >
+              <b
+                >Загрузить файл
+                <svg
+                  width="13"
+                  height="14"
+                  viewBox="0 0 13 14"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M11.0962 2.4038C9.8685 1.1761 8.2362 0.5 6.5 0.5C4.7638 0.5 3.1315 1.1761 1.9038 2.4038C0.6761 3.6315 0 5.2638 0 7C0 8.7362 0.6761 10.3685 1.9038 11.5962C3.1315 12.8239 4.76378 13.5 6.5 13.5C8.23622 13.5 9.8685 12.8239 11.0962 11.5962C12.3239 10.3685 13 8.73622 13 7C13 5.26378 12.3239 3.6315 11.0962 2.4038ZM9.37278 6.41428C9.30801 6.57064 9.15544 6.67261 8.98619 6.67261H7.91293V10.2321C7.91293 10.4632 7.72558 10.6505 7.49448 10.6505H5.50552C5.27442 10.6505 5.08707 10.4632 5.08707 10.2321V6.67261H4.01378C3.84453 6.67261 3.69196 6.57067 3.62719 6.41428C3.56244 6.25793 3.59823 6.07794 3.71791 5.95826L6.2041 3.47204C6.28257 3.39357 6.389 3.34946 6.49997 3.34946C6.61094 3.34946 6.7174 3.39354 6.79584 3.47204L9.28204 5.95826C9.40174 6.07794 9.43756 6.2579 9.37278 6.41428Z"
+                    fill="white"
+                  />
+                </svg>
+              </b>
 
-  <div class="bonus-box">
-    <h2 class="bonus-box__title">Виды карт и привелегии</h2>
+              <span>Файл не выбран</span>
+            </label>
+            <input
+              class="input-file-upload"
+              id="copy-inn"
+              type="file"
+              name="copy-inn"
+              multiple
+            />
+          </div>
+        </div>
+        <div class="form-box">
+          <div class="form-box__top">
+            <span class="form-box__name">Прикрепите фото товара\-ов</span>
+          </div>
+          <div class="form-box__field">
+            <label
+              class="custom-file-upload custom-file-upload--copy-inn"
+              for="copy-inn"
+            >
+              <b
+                >Загрузить файл
+                <svg
+                  width="13"
+                  height="14"
+                  viewBox="0 0 13 14"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M11.0962 2.4038C9.8685 1.1761 8.2362 0.5 6.5 0.5C4.7638 0.5 3.1315 1.1761 1.9038 2.4038C0.6761 3.6315 0 5.2638 0 7C0 8.7362 0.6761 10.3685 1.9038 11.5962C3.1315 12.8239 4.76378 13.5 6.5 13.5C8.23622 13.5 9.8685 12.8239 11.0962 11.5962C12.3239 10.3685 13 8.73622 13 7C13 5.26378 12.3239 3.6315 11.0962 2.4038ZM9.37278 6.41428C9.30801 6.57064 9.15544 6.67261 8.98619 6.67261H7.91293V10.2321C7.91293 10.4632 7.72558 10.6505 7.49448 10.6505H5.50552C5.27442 10.6505 5.08707 10.4632 5.08707 10.2321V6.67261H4.01378C3.84453 6.67261 3.69196 6.57067 3.62719 6.41428C3.56244 6.25793 3.59823 6.07794 3.71791 5.95826L6.2041 3.47204C6.28257 3.39357 6.389 3.34946 6.49997 3.34946C6.61094 3.34946 6.7174 3.39354 6.79584 3.47204L9.28204 5.95826C9.40174 6.07794 9.43756 6.2579 9.37278 6.41428Z"
+                    fill="white"
+                  />
+                </svg>
+              </b>
 
-    <div class="types-card">
-      <div class="types-card__table">
-        <div class="types-card__top">
-          <div></div>
-          <div class="card card--original">
-            <img src="img/logo.svg" alt="card" />
-          </div>
-          <div class="card card--vip">
-            <img src="img/logo.svg" alt="card" />
-          </div>
-          <div class="card card--ambassador">
-            <img src="img/logo-white.svg" alt="card" />
-          </div>
-        </div>
-        <div class="types-card__row">
-          <div class="types-card__item">Тип статуса</div>
-          <div class="types-card__item">ORIGINAL</div>
-          <div class="types-card__item">VIP</div>
-          <div class="types-card__item">AMBASSADOR</div>
-        </div>
-        <div class="types-card__row">
-          <div class="types-card__item">Условия получения</div>
-          <div class="types-card__item">При регистрации</div>
-          <div class="types-card__item">Покупки от 350 000 ₽/год</div>
-          <div class="types-card__item">Покупки от 850 000 ₽/год</div>
-        </div>
-        <div class="types-card__row">
-          <div class="types-card__item">Срок действия</div>
-          <div class="types-card__item">Без срока</div>
-          <div class="types-card__item">1 год</div>
-          <div class="types-card__item">1 год</div>
-        </div>
-        <div class="types-card__row">
-          <div class="types-card__item">Начисление бонусов</div>
-          <div class="types-card__item">5% от суммы покупки</div>
-          <div class="types-card__item">10% от суммы покупки</div>
-          <div class="types-card__item">15% от суммы покупки</div>
-        </div>
-        <div class="types-card__row">
-          <div class="types-card__item">Оплата бонусами</div>
-          <div class="types-card__item">
-            50% от суммы покупки на позиции линейки SOL Selivanova Olga
-          </div>
-          <div class="types-card__item">
-            50% от суммы покупки на позиции линейки SOL Selivanova Olga и SOL
-            Exclusive
-          </div>
-          <div class="types-card__item">
-            100% от суммы покупки на позиции линейки SOL Selivanova Olga и 50%
-            на SOL Exclusive
-          </div>
-        </div>
-        <div class="types-card__row">
-          <div class="types-card__item">
-            Ранний доступ к <br />
-            распродаже
-          </div>
-          <div class="types-card__item">Есть</div>
-          <div class="types-card__item">Есть</div>
-          <div class="types-card__item">Есть</div>
-        </div>
-        <div class="types-card__row">
-          <div class="types-card__item">Подарки от бренда</div>
-          <div class="types-card__item">Нет</div>
-          <div class="types-card__item">
-            Именной подарок в рамках выпуска новой коллекции. Приоритетное право
-            участия в мероприятиях бренда.
-          </div>
-          <div class="types-card__item">
-            Именной подарок в рамках выпуска новой коллекции. Подарок на день
-            рождения. Приоритетное право участия в мероприятиях бренда.
+              <span>Файл не выбран</span>
+            </label>
+            <input
+              class="input-file-upload"
+              id="copy-inn"
+              type="file"
+              name="copy-inn"
+              multiple
+            />
           </div>
         </div>
       </div>
-    </div>
 
-    <div class="types-tabs">
-      <div class="types-tabs__top">
-        <button class="types-tabs__btn active" type="button">
-          <div class="card card--original">
-            <img src="img/logo.svg" alt="card" />
-          </div>
-        </button>
-        <button class="types-tabs__btn" type="button">
-          <div class="card card--vip">
-            <img src="img/logo.svg" alt="card" />
-          </div>
-        </button>
-        <button class="types-tabs__btn" type="button">
-          <div class="card card--ambassador">
-            <img src="img/logo-white.svg" alt="card" />
-          </div>
-        </button>
-      </div>
-      <div class="types-tabs__content active">
-        <div class="types-tabs__table">
-          <div class="types-tabs__row">
-            <div class="types-tabs__item">Тип статуса</div>
-            <div class="types-tabs__item">ORIGINAL</div>
-          </div>
-          <div class="types-tabs__row">
-            <div class="types-tabs__item">Условия получения</div>
-            <div class="types-tabs__item">При регистрации</div>
-          </div>
-          <div class="types-tabs__row">
-            <div class="types-tabs__item">Срок действия</div>
-            <div class="types-tabs__item">Без срока</div>
-          </div>
-          <div class="types-tabs__row">
-            <div class="types-tabs__item">Начисление бонусов</div>
-            <div class="types-tabs__item">
-              5% от суммы <br />
-              покупки
-            </div>
-          </div>
-          <div class="types-tabs__row">
-            <div class="types-tabs__item">Оплата бонусами</div>
-            <div class="types-tabs__item">
-              50% от суммы покупки на позиции линейки SOL Selivanova Olga
-            </div>
-          </div>
-          <div class="types-tabs__row">
-            <div class="types-tabs__item">
-              Ранний доступ к <br />
-              распродаже
-            </div>
-            <div class="types-tabs__item">Есть</div>
-          </div>
-          <div class="types-tabs__row">
-            <div class="types-tabs__item">Подарки от бренда</div>
-            <div class="types-tabs__item">Нет</div>
-          </div>
-        </div>
-      </div>
-      <div class="types-tabs__content">
-        <div class="types-tabs__table">
-          <div class="types-tabs__row">
-            <div class="types-tabs__item">Тип статуса</div>
-            <div class="types-tabs__item">VIP</div>
-          </div>
-          <div class="types-tabs__row">
-            <div class="types-tabs__item">Условия получения</div>
-            <div class="types-tabs__item">Покупки от 350 000 ₽/год</div>
-          </div>
-          <div class="types-tabs__row">
-            <div class="types-tabs__item">Срок действия</div>
-            <div class="types-tabs__item">1 год</div>
-          </div>
-          <div class="types-tabs__row">
-            <div class="types-tabs__item">Начисление бонусов</div>
-            <div class="types-tabs__item">10% от суммы покупки</div>
-          </div>
-          <div class="types-tabs__row">
-            <div class="types-tabs__item">Оплата бонусами</div>
-            <div class="types-tabs__item">
-              50% от суммы покупки на позиции линейки SOL Selivanova Olga и SOL
-              Exclusive
-            </div>
-          </div>
-          <div class="types-tabs__row">
-            <div class="types-tabs__item">
-              Ранний доступ к <br />
-              распродаже
-            </div>
-            <div class="types-tabs__item">Есть</div>
-          </div>
-          <div class="types-tabs__row">
-            <div class="types-tabs__item">Подарки от бренда</div>
-            <div class="types-tabs__item">
-              Именной подарок в рамках выпуска новой коллекции. Приоритетное
-              право участия в мероприятиях бренда.
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="types-tabs__content">
-        <div class="types-tabs__table">
-          <div class="types-tabs__row">
-            <div class="types-tabs__item">Тип статуса</div>
-            <div class="types-tabs__item">AMBASSADOR</div>
-          </div>
-          <div class="types-tabs__row">
-            <div class="types-tabs__item">Условия получения</div>
-            <div class="types-tabs__item">Покупки от 850 000 ₽/год</div>
-          </div>
-          <div class="types-tabs__row">
-            <div class="types-tabs__item">Срок действия</div>
-            <div class="types-tabs__item">1 год</div>
-          </div>
-          <div class="types-tabs__row">
-            <div class="types-tabs__item">Начисление бонусов</div>
-            <div class="types-tabs__item">15% от суммы покупки</div>
-          </div>
-          <div class="types-tabs__row">
-            <div class="types-tabs__item">Оплата бонусами</div>
-            <div class="types-tabs__item">
-              100% от суммы покупки на позиции линейки SOL Selivanova Olga и 50%
-              на SOL Exclusive
-            </div>
-          </div>
-          <div class="types-tabs__row">
-            <div class="types-tabs__item">
-              Ранний доступ к <br />
-              распродаже
-            </div>
-            <div class="types-tabs__item">Есть</div>
-          </div>
-          <div class="types-tabs__row">
-            <div class="types-tabs__item">Подарки от бренда</div>
-            <div class="types-tabs__item">
-              Именной подарок в рамках выпуска новой коллекции. Подарок на день
-              рождения. Приоритетное право участия в мероприятиях бренда.
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+      <button class="form-profile__submit btn" type="submit">ОТПРАВИТЬ</button>
+    </form>
   </div>
 </section>
 
               </div>
-
               <div class="grid__bottom">
                 <p class="grid__text">Нужна помощь? <br />Свяжитесь с нами!</p>
 

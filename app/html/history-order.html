@@ -14,47 +14,64 @@
       <main class="main mt">
         <div class="container">
           <div class="grid">
-            <div class="grid__left">
-              <div class="profile-menu">
-                <ul class="profile-menu__list">
-                  <li class="profile-menu__item">
-                    <a class="profile-menu__link" href="#">МОИ ДАННЫЕ</a>
-                  </li>
-                  <li class="profile-menu__item">
-                    <a class="profile-menu__link active" href="#">
-                      ИСТОРИЯ ЗАКАЗОВ
-                    </a>
-                  </li>
-                  <li class="profile-menu__item">
-                    <a class="profile-menu__link" href="#">БОНУСЫ</a>
-                  </li>
-                  <li class="profile-menu__item">
-                    <a class="profile-menu__link" href="#">ОБМЕН И ВОЗВРАТ</a>
-                  </li>
-                </ul>
+            <h1 class="grid__title">Привет, Виктория!</h1>
+            <div class="grid__wrapper">
+              <select class="grid__select select">
+                <option value="1">МОИ ДАННЫЕ</option>
+                <option value="1">ИСТОРИЯ ЗАКАЗОВ</option>
+                <option value="1">БОНУСЫ</option>
+                <option value="1">ОБМЕН И ВОЗВРАТ</option>
+              </select>
+              <div class="grid__left">
+                <div class="profile-menu">
+                  <ul class="profile-menu__list">
+                    <li class="profile-menu__item">
+                      <a class="profile-menu__link" href="profile.html">
+                        МОИ ДАННЫЕ
+                      </a>
+                    </li>
+                    <li class="profile-menu__item">
+                      <a class="profile-menu__link active"> ИСТОРИЯ ЗАКАЗОВ </a>
+                    </li>
+                    <li class="profile-menu__item">
+                      <a class="profile-menu__link" href="bonus.html">БОНУСЫ</a>
+                    </li>
+                    <li class="profile-menu__item">
+                      <a class="profile-menu__link" href="return.html">
+                        ОБМЕН И ВОЗВРАТ
+                      </a>
+                    </li>
+                  </ul>
 
-                <button class="profile-menu__log-out btn-log-out" type="button">
-                  Выйти
-                </button>
+                  <button
+                    class="profile-menu__log-out btn-log-out"
+                    type="button"
+                  >
+                    Выйти
+                  </button>
 
-                <div class="profile-menu__bottom">
-                  <p class="profile-menu__text">
-                    Нужна помощь? <br />Свяжитесь с нами!
-                  </p>
+                  <div class="profile-menu__bottom">
+                    <p class="profile-menu__text">
+                      Нужна помощь? <br />Свяжитесь с нами!
+                    </p>
 
-                  <div class="profile-menu__links">
-                    <a class="profile-menu__phone" href="tel:+1234567890">
-                      +1 234 56 78 90
-                    </a>
-                    <a class="profile-menu__mail" href="mailto:hi@solbrand.com">
-                      hi@solbrand.com
-                    </a>
+                    <div class="profile-menu__links">
+                      <a class="profile-menu__phone" href="tel:+1234567890">
+                        +1 234 56 78 90
+                      </a>
+                      <a
+                        class="profile-menu__mail"
+                        href="mailto:hi@solbrand.com"
+                      >
+                        hi@solbrand.com
+                      </a>
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
-            <div class="grid__right">
-              @include('./components/_history-order.html')
+              <div class="grid__right">
+                @include('./components/_history-order.html')
+              </div>
             </div>
           </div>
         </div>

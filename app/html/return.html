@@ -22,12 +22,13 @@
                 <option value="1">БОНУСЫ</option>
                 <option value="1">ОБМЕН И ВОЗВРАТ</option>
               </select>
-
               <div class="grid__left">
                 <div class="profile-menu">
                   <ul class="profile-menu__list">
                     <li class="profile-menu__item">
-                      <a class="profile-menu__link active">МОИ ДАННЫЕ</a>
+                      <a class="profile-menu__link" href="profile.html">
+                        МОИ ДАННЫЕ
+                      </a>
                     </li>
                     <li class="profile-menu__item">
                       <a class="profile-menu__link" href="history-order.html">
@@ -38,9 +39,7 @@
                       <a class="profile-menu__link" href="bonus.html">БОНУСЫ</a>
                     </li>
                     <li class="profile-menu__item">
-                      <a class="profile-menu__link" href="return.html">
-                        ОБМЕН И ВОЗВРАТ
-                      </a>
+                      <a class="profile-menu__link active"> ОБМЕН И ВОЗВРАТ </a>
                     </li>
                   </ul>
 
@@ -71,7 +70,7 @@
                 </div>
               </div>
               <div class="grid__right">
-                @include('./components/_profile.html')
+                @include('./components/_profile-return.html')
               </div>
               <div class="grid__bottom">
                 <p class="grid__text">Нужна помощь? <br />Свяжитесь с нами!</p>
