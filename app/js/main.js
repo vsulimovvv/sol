@@ -5,6 +5,28 @@ window.addEventListener('DOMContentLoaded', () => {
   // * ===== Nice Select
   $('select').niceSelect();
 
+  function resizeLogo() {
+    const logo = document.querySelector('.hero__logo');
+    const hero = document.querySelector('.hero');
+    const headerLogo = document.querySelector('.header__logo');
+
+    logo.style.transform = `scale(${1 - window.scrollY / 1000}) translateY(${
+      window.scrollY / 4
+    }px)`;
+
+    if (hero) {
+      if (innerHeight <= window.scrollY + 200) {
+        logo.classList.add('hidden');
+        headerLogo.classList.add('active');
+      } else {
+        logo.classList.remove('hidden');
+        headerLogo.classList.remove('active');
+      }
+    }
+  }
+
+  window.addEventListener('scroll', resizeLogo);
+
   (function loadForm() {
     let inputs = document.querySelectorAll('.input-file-upload');
     Array.prototype.forEach.call(inputs, function (input) {
