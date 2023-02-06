@@ -7575,10 +7575,20 @@ input[type=file] {
   -o-transition: 400ms ease;
   transition: 400ms ease;
 }
+@media (max-width: 576px) {
+  .cart-side {
+    padding: 15px;
+  }
+}
 .cart-side.active {
   -webkit-transform: translateX(0);
       -ms-transform: translateX(0);
           transform: translateX(0);
+}
+@media (max-width: 576px) {
+  .cart-side {
+    width: 100%;
+  }
 }
 .cart-side__top {
   display: -webkit-box;
@@ -7610,6 +7620,15 @@ input[type=file] {
   letter-spacing: 0.08em;
   text-transform: uppercase;
   font-weight: 500;
+  font-size: 14px;
+}
+@media (max-width: 1275px) {
+  .cart-side__name {
+    font-size: calc(
+        12px + 2 *
+          ((100vw - 360px) / 915)
+      );
+  }
 }
 .cart-side__cart {
   margin-right: 40px;
@@ -7674,6 +7693,17 @@ input[type=file] {
   border-radius: 0;
   width: 100%;
   text-transform: uppercase;
+  padding: 10px;
+  height: 48px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 .cart-side__btn:not(:last-child) {
   margin-bottom: 12px;
@@ -7697,10 +7727,27 @@ input[type=file] {
           justify-content: space-between;
   padding-bottom: 8px;
   border-bottom: 1px solid #b3b3b3;
+  padding-top: 10px;
   margin-bottom: 40px;
+}
+@media (max-width: 1275px) {
+  .cart-side__total {
+    margin-bottom: calc(
+        30px + 10 *
+          ((100vw - 360px) / 915)
+      );
+  }
 }
 .cart-side__price {
   font-size: 36px;
+}
+@media (max-width: 1275px) {
+  .cart-side__price {
+    font-size: calc(
+        20px + 16 *
+          ((100vw - 360px) / 915)
+      );
+  }
 }
 
 .cart-product {
@@ -7716,6 +7763,12 @@ input[type=file] {
   -ms-flex-negative: 0;
       flex-shrink: 0;
   margin-right: 20px;
+}
+@media (max-width: 576px) {
+  .cart-product__left {
+    width: 100px;
+    height: 150px;
+  }
 }
 .cart-product__left img {
   width: 100%;
@@ -7743,6 +7796,15 @@ input[type=file] {
   font-weight: 500;
   font-size: 14px;
   text-transform: uppercase;
+  font-size: 14px;
+}
+@media (max-width: 1275px) {
+  .cart-product__title {
+    font-size: calc(
+        12px + 2 *
+          ((100vw - 360px) / 915)
+      );
+  }
 }
 .cart-product__price {
   font-weight: 500;
@@ -7810,6 +7872,21 @@ input[type=file] {
   -o-transition: 200ms ease;
   transition: 200ms ease;
   line-height: 1;
+  color: var(--color-black);
+}
+.cart-product__add-fav svg {
+  display: none;
+}
+@media (max-width: 576px) {
+  .cart-product__add-fav {
+    border-bottom: none;
+  }
+  .cart-product__add-fav svg {
+    display: block;
+  }
+  .cart-product__add-fav span {
+    display: none;
+  }
 }
 .cart-product__add-fav:hover {
   border-bottom-color: transparent;
