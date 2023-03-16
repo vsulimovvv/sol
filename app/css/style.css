@@ -76,6 +76,7 @@ button {
   border: none;
   background-color: transparent;
   cursor: pointer;
+  color: inherit;
 }
 
 /* Chrome, Safari, Edge, Opera */
@@ -304,6 +305,10 @@ body {
 }
 body.no-scroll {
   overflow: hidden;
+}
+
+a {
+  color: var(--color-dark);
 }
 
 .container {
@@ -6595,9 +6600,9 @@ input[type=file] {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
 }
 @media (max-width: 767.98px) {
   .catalog__row .product-card__body {
