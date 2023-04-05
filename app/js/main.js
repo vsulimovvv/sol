@@ -26,10 +26,6 @@ window.addEventListener('DOMContentLoaded', () => {
     });
   })();
 
-  //   (function resizeLogo() {
-  // // const siteNote
-  //   })();
-
   function resizeLogo() {
     const logo = document.querySelector('.hero__logo');
     const hero = document.querySelector('.hero');
@@ -91,6 +87,7 @@ window.addEventListener('DOMContentLoaded', () => {
     }
   })();
 
+  // * SHOW DROPDOWN
   (function showDropdown() {
     const links = document.querySelectorAll('.menu__link');
     const dropdowns = document.querySelectorAll('.dropmenu');
@@ -99,10 +96,16 @@ window.addEventListener('DOMContentLoaded', () => {
       if (link) {
         link.addEventListener('mouseover', (e) => {
           dropdowns.forEach((dropdown) => {
-            console.log(dropdown.dataset.target);
-
             if (link.dataset.target === dropdown.dataset.target) {
               dropdown.classList.toggle('active');
+
+              // dropdown.addEventListener('mouseover', () => {
+              //   dropdown.classList.add('active');
+              // });
+
+              // dropdown.addEventListener('mouseleave', () => {
+              //   dropdown.classList.remove('active');
+              // });
             }
           });
         });
@@ -339,25 +342,6 @@ window.addEventListener('DOMContentLoaded', () => {
       });
     }
   })();
-
-  // // * ===== Show Search
-  // (function showFilters() {
-  //   const menuBtn = document.querySelectorAll('.show-search');
-  //   const menu = document.querySelector('.header-search-mobile');
-  //   const menuCloseBtn = document.querySelector('.header-tools__close');
-
-  //   if (menu) {
-  //     menuBtn.forEach((btn) => {
-  //       btn.addEventListener('click', (e) => {
-  //         menu.classList.toggle('active');
-  //       });
-  //     });
-
-  //     menuCloseBtn.addEventListener('click', (e) => {
-  //       menu.classList.remove('active');
-  //     });
-  //   }
-  // })();
 
   // * ===== Modal
   (function modals() {
