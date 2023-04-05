@@ -297,7 +297,7 @@
           </button>
         </li>
         <li class="mobile-tools__item">
-          <button class="header__search-btn" type="button">
+          <button class="header__search-btn show-search" type="button">
             <svg
               width="24"
               height="24"
@@ -342,27 +342,31 @@
                 stroke-width="1.4"
               />
             </svg>
+            <span class="count"> 12 </span>
           </a>
         </li>
         <li class="mobile-tools__item">
-          <svg
-            width="24"
-            height="24"
-            viewBox="0 0 24 24"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M9.57129 7.80952V6.97533C9.57129 6.29698 9.8726 5.65367 10.3937 5.2194V5.2194C11.2414 4.51303 12.4726 4.51303 13.3203 5.2194V5.2194C13.8414 5.65367 14.1427 6.29698 14.1427 6.97533V7.80952"
-              stroke="#202020"
-              stroke-width="1.4"
-            />
-            <path
-              d="M18.7143 20.0002H5L6.54364 10.9956C6.70825 10.0354 7.54071 9.3335 8.51489 9.3335H15.1994C16.1736 9.3335 17.006 10.0354 17.1706 10.9956L18.7143 20.0002Z"
-              stroke="#202020"
-              stroke-width="1.4"
-            />
-          </svg>
+          <a class="mobile-tools__link" href="#">
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M9.57129 7.80952V6.97533C9.57129 6.29698 9.8726 5.65367 10.3937 5.2194V5.2194C11.2414 4.51303 12.4726 4.51303 13.3203 5.2194V5.2194C13.8414 5.65367 14.1427 6.29698 14.1427 6.97533V7.80952"
+                stroke="#202020"
+                stroke-width="1.4"
+              />
+              <path
+                d="M18.7143 20.0002H5L6.54364 10.9956C6.70825 10.0354 7.54071 9.3335 8.51489 9.3335H15.1994C16.1736 9.3335 17.006 10.0354 17.1706 10.9956L18.7143 20.0002Z"
+                stroke="#202020"
+                stroke-width="1.4"
+              />
+            </svg>
+            <span class="count"> 12 </span>
+          </a>
         </li>
       </ul>
     </div>
@@ -370,98 +374,214 @@
     <div class="mobile-menu__body">
       <ul class="mobile-menu__list">
         <li class="mobile-menu__item">
-          <div class="accordion">
-            <button class="mobile-menu__control accordion-control" href="#">
-              магазин
-            </button>
-            <div class="accordion-content">
-              <ul class="mobile-menu__list mobile-menu__list--accordion">
-                <li class="mobile-menu__item">
-                  <a class="mobile-menu__link" href="#">
-                    <span>Блузки </span> <span>Рубашки</span>
-                  </a>
+          <div class="menu-mobile-box accordion">
+            <div class="menu-mobile-box__top">
+              <a class="menu-mobile-box__name" href="#"> Магазин </a>
+              <button class="accordion-control">
+                <svg>
+                  <use xlink:href="img/sprite.svg#chevron"></use>
+                </svg>
+              </button>
+            </div>
+
+            <div class="menu-mobile-box__content accordion-content">
+              <ul class="menu-mobile-box__list">
+                <li class="menu-mobile-box__item">
+                  <div class="drop-box">
+                    <div class="drop-box__top">
+                      <a class="drop-box__name" href="#"> Магазин </a>
+
+                      <button class="drop-box__control">
+                        <svg>
+                          <use xlink:href="img/sprite.svg#chevron"></use>
+                        </svg>
+                      </button>
+                    </div>
+
+                    <div class="drop-box__content">
+                      <ul class="drop-box__list">
+                        <li class="drop-box__item">
+                          <a class="drop-box__link" href="#">
+                            <span>Блузки </span> <span>Рубашки</span>
+                          </a>
+                        </li>
+                        <li class="drop-box__item">
+                          <a class="drop-box__link" href="#">
+                            <span>Брюки</span> <span>Джинсы </span>
+                            <span>Леггинсы</span>
+                          </a>
+                        </li>
+                        <li class="drop-box__item">
+                          <a class="drop-box__link" href="#">
+                            <span>Верхняя одежда</span>
+                          </a>
+                        </li>
+                        <li class="drop-box__item">
+                          <a class="drop-box__link" href="#">
+                            <span>Кимоно</span>
+                          </a>
+                        </li>
+                        <li class="drop-box__item">
+                          <a class="drop-box__link" href="#">
+                            <span>Нижнее белье</span>
+                          </a>
+                        </li>
+                        <li class="drop-box__item">
+                          <a class="drop-box__link" href="#">
+                            <span>Пиджаки </span> <span>Костюмы</span>
+                            <span>Жилеты белье</span>
+                          </a>
+                        </li>
+                        <li class="drop-box__item">
+                          <a class="drop-box__link" href="#">
+                            <span>Платья</span>
+                          </a>
+                        </li>
+                        <li class="drop-box__item">
+                          <a class="drop-box__link" href="#">
+                            <span>Футболки </span> <span>Топы</span>
+                            <span>Майки</span>
+                          </a>
+                        </li>
+                        <li class="drop-box__item">
+                          <a class="drop-box__link" href="#">
+                            <span>Худи </span> <span>Толстовки</span>
+                            <span>Лонгсливы</span>
+                          </a>
+                        </li>
+                        <li class="drop-box__item">
+                          <a class="drop-box__link" href="#">
+                            <span>Шорты </span>
+                          </a>
+                        </li>
+                        <li class="drop-box__item">
+                          <a class="drop-box__link" href="#">
+                            <span>Юбки </span>
+                          </a>
+                        </li>
+                        <li class="drop-box__item">
+                          <a class="drop-box__link" href="#">
+                            <span>SOL Evening </span>
+                          </a>
+                        </li>
+                        <li class="drop-box__item">
+                          <a class="drop-box__link" href="#">
+                            <span>Sport Chic</span>
+                          </a>
+                        </li>
+                        <li class="drop-box__item">
+                          <a class="drop-box__link" href="#">
+                            <span>Аксессуары</span>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
                 </li>
-                <li class="mobile-menu__item">
-                  <a class="mobile-menu__link" href="#">
-                    <span>Брюки</span> <span>Джинсы </span>
-                    <span>Леггинсы</span>
-                  </a>
-                </li>
-                <li class="mobile-menu__item">
-                  <a class="mobile-menu__link" href="#">
-                    <span>Верхняя одежда</span>
-                  </a>
-                </li>
-                <li class="mobile-menu__item">
-                  <a class="mobile-menu__link" href="#">
-                    <span>Кимоно</span>
-                  </a>
-                </li>
-                <li class="mobile-menu__item">
-                  <a class="mobile-menu__link" href="#">
-                    <span>Нижнее белье</span>
-                  </a>
-                </li>
-                <li class="mobile-menu__item">
-                  <a class="mobile-menu__link" href="#">
-                    <span>Пиджаки </span> <span>Костюмы</span>
-                    <span>Жилеты белье</span>
-                  </a>
-                </li>
-                <li class="mobile-menu__item">
-                  <a class="mobile-menu__link" href="#">
-                    <span>Платья</span>
-                  </a>
-                </li>
-                <li class="mobile-menu__item">
-                  <a class="mobile-menu__link" href="#">
-                    <span>Футболки </span> <span>Топы</span>
-                    <span>Майки</span>
-                  </a>
-                </li>
-                <li class="mobile-menu__item">
-                  <a class="mobile-menu__link" href="#">
-                    <span>Худи </span> <span>Толстовки</span>
-                    <span>Лонгсливы</span>
-                  </a>
-                </li>
-                <li class="mobile-menu__item">
-                  <a class="mobile-menu__link" href="#">
-                    <span>Шорты </span>
-                  </a>
-                </li>
-                <li class="mobile-menu__item">
-                  <a class="mobile-menu__link" href="#">
-                    <span>Юбки </span>
-                  </a>
-                </li>
-                <li class="mobile-menu__item">
-                  <a class="mobile-menu__link" href="#">
-                    <span>SOL Evening </span>
-                  </a>
-                </li>
-                <li class="mobile-menu__item">
-                  <a class="mobile-menu__link" href="#">
-                    <span>Sport Chic</span>
-                  </a>
-                </li>
-                <li class="mobile-menu__item">
-                  <a class="mobile-menu__link" href="#">
-                    <span>Аксессуары</span>
-                  </a>
+                <li class="menu-mobile-box__item">
+                  <div class="drop-box">
+                    <div class="drop-box__top">
+                      <a class="drop-box__name" href="#"> Магазин </a>
+
+                      <button class="drop-box__control">
+                        <svg>
+                          <use xlink:href="img/sprite.svg#chevron"></use>
+                        </svg>
+                      </button>
+                    </div>
+
+                    <div class="drop-box__content">
+                      <ul class="drop-box__list">
+                        <li class="drop-box__item">
+                          <a class="drop-box__link" href="#">
+                            <span>Блузки </span> <span>Рубашки</span>
+                          </a>
+                        </li>
+                        <li class="drop-box__item">
+                          <a class="drop-box__link" href="#">
+                            <span>Брюки</span> <span>Джинсы </span>
+                            <span>Леггинсы</span>
+                          </a>
+                        </li>
+                        <li class="drop-box__item">
+                          <a class="drop-box__link" href="#">
+                            <span>Верхняя одежда</span>
+                          </a>
+                        </li>
+                        <li class="drop-box__item">
+                          <a class="drop-box__link" href="#">
+                            <span>Кимоно</span>
+                          </a>
+                        </li>
+                        <li class="drop-box__item">
+                          <a class="drop-box__link" href="#">
+                            <span>Нижнее белье</span>
+                          </a>
+                        </li>
+                        <li class="drop-box__item">
+                          <a class="drop-box__link" href="#">
+                            <span>Пиджаки </span> <span>Костюмы</span>
+                            <span>Жилеты белье</span>
+                          </a>
+                        </li>
+                        <li class="drop-box__item">
+                          <a class="drop-box__link" href="#">
+                            <span>Платья</span>
+                          </a>
+                        </li>
+                        <li class="drop-box__item">
+                          <a class="drop-box__link" href="#">
+                            <span>Футболки </span> <span>Топы</span>
+                            <span>Майки</span>
+                          </a>
+                        </li>
+                        <li class="drop-box__item">
+                          <a class="drop-box__link" href="#">
+                            <span>Худи </span> <span>Толстовки</span>
+                            <span>Лонгсливы</span>
+                          </a>
+                        </li>
+                        <li class="drop-box__item">
+                          <a class="drop-box__link" href="#">
+                            <span>Шорты </span>
+                          </a>
+                        </li>
+                        <li class="drop-box__item">
+                          <a class="drop-box__link" href="#">
+                            <span>Юбки </span>
+                          </a>
+                        </li>
+                        <li class="drop-box__item">
+                          <a class="drop-box__link" href="#">
+                            <span>SOL Evening </span>
+                          </a>
+                        </li>
+                        <li class="drop-box__item">
+                          <a class="drop-box__link" href="#">
+                            <span>Sport Chic</span>
+                          </a>
+                        </li>
+                        <li class="drop-box__item">
+                          <a class="drop-box__link" href="#">
+                            <span>Аксессуары</span>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
                 </li>
               </ul>
             </div>
           </div>
         </li>
         <li class="mobile-menu__item">
-          <a class="mobile-menu__control" href="#">sol vINTAGE</a>
+          <a class="mobile-menu__link" href="#">sol vINTAGE</a>
         </li>
         <li class="mobile-menu__item">
-          <a class="mobile-menu__control" href="#">ART GALLERY</a>
+          <a class="mobile-menu__link" href="#">ART GALLERY</a>
         </li>
         <li class="mobile-menu__item">
-          <a class="mobile-menu__control" href="#">The world of SOL</a>
+          <a class="mobile-menu__link" href="#">The world of SOL</a>
         </li>
       </ul>
     </div>
@@ -1665,6 +1785,7 @@
                   stroke-width="1.4"
                 />
               </svg>
+              <span class="count"> 12 </span>
             </a>
           </li>
           <li class="header-tools__item">
@@ -1687,6 +1808,7 @@
                   stroke-width="1.4"
                 />
               </svg>
+              <span class="count"> 12 </span>
             </button>
           </li>
         </ul>

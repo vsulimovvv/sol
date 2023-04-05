@@ -227,7 +227,7 @@ window.addEventListener('DOMContentLoaded', () => {
           const content = target.querySelector(accordionContent);
           target.classList.toggle('active');
           if (target.classList.contains('active')) {
-            content.style.maxHeight = content.scrollHeight + 'px';
+            content.style.maxHeight = content.scrollHeight + '1px';
           } else {
             content.style.maxHeight = null;
           }
@@ -236,6 +236,7 @@ window.addEventListener('DOMContentLoaded', () => {
     });
   };
   toggleAccordion('.accordion-control', '.accordion-content', '.accordion');
+  toggleAccordion('.drop-box__control', '.drop-box__content', '.drop-box');
 
   // * ===== Fixed Header
   (function fixedHeader() {
@@ -298,23 +299,25 @@ window.addEventListener('DOMContentLoaded', () => {
     const body = document.querySelector('body');
     const overlay = document.querySelector('.overlay');
 
-    menuBtn.addEventListener('click', (e) => {
-      menu.classList.toggle('active');
-      overlay.classList.toggle('active');
-      body.classList.toggle('no-scroll');
-    });
+    if (menu) {
+      menuBtn.addEventListener('click', (e) => {
+        menu.classList.toggle('active');
+        overlay.classList.toggle('active');
+        body.classList.toggle('no-scroll');
+      });
 
-    overlay.addEventListener('click', (e) => {
-      menu.classList.remove('active');
-      overlay.classList.remove('active');
-      body.classList.remove('no-scroll');
-    });
+      overlay.addEventListener('click', (e) => {
+        menu.classList.remove('active');
+        overlay.classList.remove('active');
+        body.classList.remove('no-scroll');
+      });
 
-    menuCloseBtn.addEventListener('click', (e) => {
-      menu.classList.remove('active');
-      overlay.classList.remove('active');
-      body.classList.remove('no-scroll');
-    });
+      menuCloseBtn.addEventListener('click', (e) => {
+        menu.classList.remove('active');
+        overlay.classList.remove('active');
+        body.classList.remove('no-scroll');
+      });
+    }
   })();
 
   // * ===== Show Filters
@@ -336,6 +339,25 @@ window.addEventListener('DOMContentLoaded', () => {
       });
     }
   })();
+
+  // // * ===== Show Search
+  // (function showFilters() {
+  //   const menuBtn = document.querySelectorAll('.show-search');
+  //   const menu = document.querySelector('.header-search-mobile');
+  //   const menuCloseBtn = document.querySelector('.header-tools__close');
+
+  //   if (menu) {
+  //     menuBtn.forEach((btn) => {
+  //       btn.addEventListener('click', (e) => {
+  //         menu.classList.toggle('active');
+  //       });
+  //     });
+
+  //     menuCloseBtn.addEventListener('click', (e) => {
+  //       menu.classList.remove('active');
+  //     });
+  //   }
+  // })();
 
   // * ===== Modal
   (function modals() {
@@ -471,6 +493,18 @@ window.addEventListener('DOMContentLoaded', () => {
     '.categories-tabs',
     '.categories-tabs-btn',
     '.categories-tabs-content',
+    'active'
+  );
+  hoverTabs(
+    '.dropmenu-tabs-shop',
+    '.dropmenu-tabs-btn',
+    '.dropmenu-tabs-content',
+    'active'
+  );
+  hoverTabs(
+    '.dropmenu-tabs-client',
+    '.tabs-btn-client',
+    '.tabs-content-client',
     'active'
   );
 
