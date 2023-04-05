@@ -1184,6 +1184,7 @@ input[type=file] {
           mask: url("../img/icons/arrow.svg") no-repeat center/contain;
   background-color: var(--color-dark);
 }
+
 .swiper-button-next::after {
   -webkit-transform: rotate(180deg);
       -ms-transform: rotate(180deg);
@@ -1999,9 +2000,6 @@ input[type=file] {
 .header--sticky {
   background-color: var(--color-white);
   border-bottom: 1px solid #e6e6e6;
-}
-.header--sticky .header__logo {
-  display: block;
 }
 .header--relative {
   background-color: var(--color-white);
@@ -2947,17 +2945,6 @@ input[type=file] {
   -webkit-animation: opacity-visibility 700ms ease forwards;
           animation: opacity-visibility 700ms ease forwards;
 }
-.dropmenu-tabs__content.active:hover {
-  display: block;
-  -webkit-animation: opacity-visibility 700ms ease forwards;
-          animation: opacity-visibility 700ms ease forwards;
-}
-.dropmenu-tabs .tabs-btn-client.active, .dropmenu-tabs .tabs-btn-client:hover {
-  color: var(--color-dark) !important;
-}
-.dropmenu-tabs-btn.active, .dropmenu-tabs-btn:hover {
-  color: var(--color-dark) !important;
-}
 
 .dropmenu {
   width: 100%;
@@ -2966,15 +2953,15 @@ input[type=file] {
   top: 130px;
   background-color: var(--color-white);
   padding: 30px 25px;
-  -webkit-transition: 450ms ease;
-  -o-transition: 450ms ease;
-  transition: 450ms ease;
+  -webkit-transition: 650ms ease;
+  -o-transition: 650ms ease;
+  transition: 650ms ease;
   -webkit-transition-delay: 150ms;
        -o-transition-delay: 150ms;
           transition-delay: 150ms;
-  -webkit-transform: translateY(-10px);
-      -ms-transform: translateY(-10px);
-          transform: translateY(-10px);
+  -webkit-transform: translateX(-100vw);
+      -ms-transform: translateX(-100vw);
+          transform: translateX(-100vw);
   opacity: 0;
   visibility: hidden;
 }
@@ -2986,9 +2973,9 @@ input[type=file] {
 .dropmenu:hover {
   opacity: 1;
   visibility: visible;
-  -webkit-transform: translateY(0);
-      -ms-transform: translateY(0);
-          transform: translateY(0);
+  -webkit-transform: translateX(0);
+      -ms-transform: translateX(0);
+          transform: translateX(0);
 }
 .dropmenu.active {
   opacity: 1;
@@ -3010,25 +2997,20 @@ input[type=file] {
   grid-template-columns: repeat(3, auto);
   gap: 40px;
 }
-.dropmenu__col:nth-child(1) .dropmenu__item:nth-child(1) .dropmenu__link {
-  color: var(--color-dark);
-}
-.dropmenu__col:nth-child(1) .dropmenu__link {
-  text-transform: uppercase;
-  font-weight: 600;
-  font-size: 20px;
-}
 .dropmenu__link {
   display: block;
   width: 100%;
   padding: 12px 0;
-  font-size: 15px;
+  font-size: 20px;
   line-height: 1;
-  font-weight: 300;
+  font-weight: 600;
   -webkit-transition: 150ms ease;
   -o-transition: 150ms ease;
   transition: 150ms ease;
   color: var(--color-04);
+}
+.dropmenu__link.active, .dropmenu__link:hover {
+  color: var(--color-dark);
 }
 .dropmenu__sublink {
   display: block;
@@ -3157,6 +3139,7 @@ input[type=file] {
       );
   }
 }
+
 .product-card {
   width: 100%;
   padding: 12px 20px;
@@ -5658,6 +5641,7 @@ input[type=file] {
     display: block;
   }
 }
+
 .showroom {
   padding-top: 60px;
   padding-bottom: 90px;
@@ -7224,6 +7208,7 @@ input[type=file] {
 .range-slider .noUi-connect {
   background-color: var(--color-dark);
 }
+
 .login {
   padding-top: 90px;
   padding-bottom: 90px;

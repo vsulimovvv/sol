@@ -98,14 +98,6 @@ window.addEventListener('DOMContentLoaded', () => {
           dropdowns.forEach((dropdown) => {
             if (link.dataset.target === dropdown.dataset.target) {
               dropdown.classList.toggle('active');
-
-              // dropdown.addEventListener('mouseover', () => {
-              //   dropdown.classList.add('active');
-              // });
-
-              // dropdown.addEventListener('mouseleave', () => {
-              //   dropdown.classList.remove('active');
-              // });
             }
           });
         });
