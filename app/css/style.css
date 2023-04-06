@@ -3927,6 +3927,7 @@ input[type=file] {
   text-align: center;
   margin: 0 auto;
   border-bottom: 1px solid var(--color-white);
+  color: var(--color-white);
 }
 
 .categories {

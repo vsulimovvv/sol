@@ -335,6 +335,25 @@ window.addEventListener('DOMContentLoaded', () => {
     }
   })();
 
+  // * ===== Show Search
+  (function showSearch() {
+    const menuBtn = document.querySelectorAll('.show-search');
+    const menu = document.querySelector('.header-search-mobile');
+    const menuCloseBtn = document.querySelector('.header-search-mobile__close');
+
+    menuBtn.forEach((btn) => {
+      if (btn) {
+        btn.addEventListener('click', (e) => {
+          menu.classList.toggle('active');
+        });
+
+        menuCloseBtn.addEventListener('click', (e) => {
+          menu.classList.remove('active');
+        });
+      }
+    });
+  })();
+
   // * ===== Modal
   (function modals() {
     function bindModal(openBtn, modal, close) {
