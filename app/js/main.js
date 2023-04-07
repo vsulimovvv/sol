@@ -78,6 +78,10 @@ window.addEventListener('DOMContentLoaded', () => {
       closeBtn.addEventListener('click', (e) => {
         content.style.display = 'none';
 
+        document.querySelectorAll('.dropmenu').forEach((el) => {
+          el.style.top = '80px';
+        });
+
         cartSide.style.height = '100vh';
         cartSide.style.top = '0';
 
@@ -335,24 +339,24 @@ window.addEventListener('DOMContentLoaded', () => {
     }
   })();
 
-  // * ===== Show Search
-  (function showSearch() {
-    const menuBtn = document.querySelectorAll('.show-search');
-    const menu = document.querySelector('.header-search-mobile');
-    const menuCloseBtn = document.querySelector('.header-search-mobile__close');
+  // // * ===== Show Search
+  // (function showSearch() {
+  //   const menuBtn = document.querySelectorAll('.show-search');
+  //   const menu = document.querySelector('.header-search-mobile');
+  //   const menuCloseBtn = document.querySelector('.header-search-mobile__close');
 
-    menuBtn.forEach((btn) => {
-      if (btn) {
-        btn.addEventListener('click', (e) => {
-          menu.classList.toggle('active');
-        });
+  //   menuBtn.forEach((btn) => {
+  //     if (btn) {
+  //       btn.addEventListener('click', (e) => {
+  //         menu.classList.toggle('active');
+  //       });
 
-        menuCloseBtn.addEventListener('click', (e) => {
-          menu.classList.remove('active');
-        });
-      }
-    });
-  })();
+  //       menuCloseBtn.addEventListener('click', (e) => {
+  //         menu.classList.remove('active');
+  //       });
+  //     }
+  //   });
+  // })();
 
   // * ===== Modal
   (function modals() {
@@ -491,15 +495,15 @@ window.addEventListener('DOMContentLoaded', () => {
     'active'
   );
   hoverTabs(
-    '.dropmenu-tabs-shop',
-    '.dropmenu-tabs-btn',
-    '.dropmenu-tabs-content',
+    '.tabs-shop',
+    '.tabs-shop-btn',
+    '.tabs-shop-content',
     'active'
   );
   hoverTabs(
-    '.dropmenu-tabs-client',
-    '.tabs-btn-client',
-    '.tabs-content-client',
+    '.tabs-customer',
+    '.tabs-customer-btn',
+    '.tabs-customer-content',
     'active'
   );
 
