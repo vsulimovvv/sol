@@ -1,4 +1,23 @@
 window.addEventListener('DOMContentLoaded', () => {
+  gsap.registerPlugin(ScrollTrigger);
+  // laptop Animation
+  const laptopScreen = window.matchMedia('(min-width: 992px)');
+
+  const section = document.querySelector('.product__wrapper');
+  const element = document.querySelector('.product__right');
+
+  if (laptopScreen.matches) {
+    // Product
+    const tlProduct = gsap.timeline();
+
+    ScrollTrigger.create({
+      trigger: '.product__right',
+      start: '-160px 0',
+      pin: '.product__right',
+      end: `+=${section.offsetHeight - element.offsetHeight - 130}`,
+    });
+  }
+
   // * ===== Mask input
   $('input[type="tel"]').mask('+7 (999) 999-99-99');
 
@@ -494,12 +513,7 @@ window.addEventListener('DOMContentLoaded', () => {
     '.categories-tabs-content',
     'active'
   );
-  hoverTabs(
-    '.tabs-shop',
-    '.tabs-shop-btn',
-    '.tabs-shop-content',
-    'active'
-  );
+  hoverTabs('.tabs-shop', '.tabs-shop-btn', '.tabs-shop-content', 'active');
   hoverTabs(
     '.tabs-customer',
     '.tabs-customer-btn',
