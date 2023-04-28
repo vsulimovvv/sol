@@ -1,22 +1,24 @@
 window.addEventListener('DOMContentLoaded', () => {
-  gsap.registerPlugin(ScrollTrigger);
-  // laptop Animation
-  const laptopScreen = window.matchMedia('(min-width: 992px)');
+  (function fixedProductRight() {
+    gsap.registerPlugin(ScrollTrigger);
+    // laptop Animation
+    const laptopScreen = window.matchMedia('(min-width: 992px)');
 
-  const section = document.querySelector('.product__wrapper');
-  const element = document.querySelector('.product__right');
+    const section = document.querySelector('.product__wrapper');
+    const element = document.querySelector('.product__right');
 
-  if (laptopScreen.matches) {
-    // Product
-    const tlProduct = gsap.timeline();
+    if (laptopScreen.matches) {
+      // Product
+      const tlProduct = gsap.timeline();
 
-    ScrollTrigger.create({
-      trigger: '.product__right',
-      start: '-160px 0',
-      pin: '.product__right',
-      end: `+=${section.offsetHeight - element.offsetHeight - 130}`,
-    });
-  }
+      ScrollTrigger.create({
+        trigger: '.product__right',
+        start: '-160px 0',
+        pin: '.product__right',
+        end: `+=${section?.offsetHeight - element?.offsetHeight - 130}`,
+      });
+    }
+  })();
 
   // * ===== Mask input
   $('input[type="tel"]').mask('+7 (999) 999-99-99');

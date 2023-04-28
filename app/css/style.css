@@ -6391,6 +6391,9 @@ input[type=file] {
     display: none;
   }
 }
+.product__left li {
+  cursor: pointer;
+}
 .product__slider {
   height: 800px;
   position: relative;
